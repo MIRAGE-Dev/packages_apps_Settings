@@ -185,7 +185,7 @@ public class Pie extends SettingsPreferenceFragment
                     Settings.System.PIE_STICK, mPieStick.isChecked() ? 1 : 0);
         } else if (preference == mPieRestart) {
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
-                    Settings.System.EXPANDED_DESKTOP_RESTART_LAUNCHER, mPieRestart.isChecked() ? 1 : 0); 
+                    Settings.System.EXPANDED_DESKTOP_RESTART_LAUNCHER, mPieRestart.isChecked() ? 1 : 0);
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
