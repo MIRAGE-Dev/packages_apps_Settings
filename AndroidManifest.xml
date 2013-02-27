@@ -1551,6 +1551,8 @@
         <activity android:name=".slim.WidgetsSettings" />
         <activity android:name=".slim.WidgetsStyle" />
         <activity android:name=".slim.RamBar" />
+        <activity android:name=".slim.Pie" />
+        <activity android:name=".slim.PieColor" />
         <activity android:name=".ApnEditor" />
 
         <activity
