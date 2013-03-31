@@ -4508,7 +4508,7 @@
 
     <!-- INTERFACE Settings  -->
     <!-- Settings main menu category heading. Rom (Launcher, Themes, System). [CHAR LIMIT=40] -->
-    <string name="header_category_rom_settings">ADVANCED SLIM SETTINGS</string>
+    <string name="header_category_rom_settings">MIRAGE SETTINGS</string>
     <string name="header_category_rom_system_settings">ADVANCED SYSTEM SETTINGS</string>
     <string name="ok">OK</string>
 
@@ -4909,7 +4909,7 @@
     <string name="low_battery_warning_policy_disabled">Disabled</string>
 
     <!-- TRDS Settings -->
-    <string name="trds_settings_title">The Real Dark Slim</string>
+    <string name="trds_settings_title">Dark MIRAGE</string>
 
     <!-- LCD Density -->
     <string name="dpi">DPI</string>
