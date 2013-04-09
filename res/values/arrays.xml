@@ -1699,6 +1699,10 @@
         <item>@*android:drawable/ic_shortcut_unlock</item>
     </string-array>
 
+    <string-array name="lockscreen_battery_status_entries">
+        <item>@string/lockscreen_battery_status_charging</item>
+        <item>@string/lockscreen_battery_status_alwayson</item>
+
     <!-- Pie Controls -->
     <string-array name="all_color_style_entries" translatable="false">
         <item>@string/all_color</item>

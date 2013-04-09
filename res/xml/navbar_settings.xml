@@ -18,7 +18,7 @@
 
     <PreferenceScreen
         android:key="pie_control"
-        android:fragment="com.android.settings.liquid.Pie"
+        android:fragment="com.android.settings.slim.Pie"
         android:title="@string/pie_controls_title"
         android:summary="@string/pie_controls_summary" />
 

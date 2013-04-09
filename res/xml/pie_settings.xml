@@ -20,7 +20,7 @@
     <PreferenceScreen
             android:key="pie_color"
             android:title="@string/pie_color_title"
-            android:fragment="com.android.settings.liquid.PieColor" />
+            android:fragment="com.android.settings.slim.PieColor" />
 
     <PreferenceCategory
         android:key="pie_control"
