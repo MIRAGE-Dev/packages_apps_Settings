@@ -1702,6 +1702,7 @@
     <string-array name="lockscreen_battery_status_entries">
         <item>@string/lockscreen_battery_status_charging</item>
         <item>@string/lockscreen_battery_status_alwayson</item>
+    </string-array>
 
     <!-- Pie Controls -->
     <string-array name="all_color_style_entries" translatable="false">
@@ -1736,10 +1737,10 @@
     </string-array>
 
     <string-array name="values_pie_size" translatable="false">
-        <item>0.8</item>
+        <item>0.9</item>
         <item>1.0</item>
+        <item>1.1</item>
         <item>1.2</item>
-        <item>1.4</item>
     </string-array>
 
     <string-array name="entries_pie_mode">
