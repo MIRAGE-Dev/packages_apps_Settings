@@ -1474,6 +1474,13 @@
     <!-- Do not translate.  Concise terminology for wifi with 802.1x EAP security -->
     <string name="wifi_security_eap">802.1x EAP</string>
 
+    <string name="wifi_mode">Mode</string>
+    <string name="wifi_mode_ibss">Ad-Hoc (IBSS) Network</string>
+    <string name="wifi_mode_ibss_short">Ad-Hoc</string>
+
+    <string name="wifi_ibss_freq_title">Channel / Frequency</string>
+    <string name="wifi_channel">Channel</string>
+    <string name="wifi_mhz">MHz</string>
 
     <!-- Button label to connect to a Wi-Fi network -->
     <string name="wifi_connect">Connect</string>
@@ -4780,16 +4787,6 @@
     <string name="expanded_desktop_only_nav_bar">Hide navigation bar</string>
     <string name="expanded_desktop_only_status_bar">Hide status bar</string>
     <string name="expanded_desktop_both_hidden">Hide navigation and status bar</string>
-
-    <!-- About -->
-    <string name="title_about">About Slim</string>
-    <string name="devs">Developer</string>
-    <string name="links">Official links</string>
-    <string name="slim_website_title">Slim Website</string>
-    <string name="slim_source_title">Slim Source</string>
-    <string name="slim_website_summary">www.slimroms.net\nFind all latest Slim news here</string>
-    <string name="slim_source_summary">SlimRoms are fully open source.\nSource at github.com/SlimRoms</string>
-    <string name="donate_slim">http://www.slimroms.net/index.php/donations</string>
 
     <string name="increasing_ring_title">Ascending ringtone</string>
     <!-- Sound settings screen, the caption of the checkbox for making incoming calls increase in volume -->
