@@ -5185,7 +5185,6 @@
     <string name="title_tile_reboot">Reboot</string>
     <string name="title_tile_nfc">NFC</string>
     <string name="title_tile_screen_timeout">Screen timeout</string>
-    <string name="title_tile_favcontact">Favorite contact</string>
     <string name="title_tile_fcharge">Fast charge</string>
     <string name="title_tile_quiet_hours">Quiet hours</string>
     <string name="title_dynamic_tiles">Dynamic tiles</string>
@@ -5584,7 +5583,6 @@
     <string name="bottom_of_navbar">Bottom of navbar</string>
     <string name="regular">Regular</string>
     <string name="center_mirrored">Center-mirrored</string>
-    <string name="size_0_dp">0 dp (off)</string>
     <string name="size_1_dp">1 dp</string>
     <string name="size_2_dp">2 dp</string>
     <string name="size_3_dp">3 dp</string>
@@ -5878,5 +5876,9 @@
     <!-- Lock volume keys -->
     <string name="sound_lock_volume_keys_title">Lock volume keys</string>
     <string name="sound_lock_volume_keys_summary">Prevents accidental unset of silent mode by pressing volume keys</string>
+
+    <!-- Auto-Hide Status Bar -->
+    <string name="auto_hide_statusbar">Auto Hide statusbar</string>
+    <string name="auto_hide_statusbar_summary">Statusbar hides itself when there are no notifications</string>
 
 </resources>
