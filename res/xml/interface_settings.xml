@@ -50,12 +50,6 @@
         android:title="@string/navigation_bar" />
 
     <PreferenceScreen
-        android:key="pie_control"
-        android:fragment="com.android.settings.slim.Pie"
-        android:title="@string/pie_controls_title"
-        android:summary="@string/pie_controls_summary" />
-
-    <PreferenceScreen
         android:key="notification_drawer"
         android:fragment="com.android.settings.slim.NotificationDrawerSettings"
         android:title="@string/notification_drawer_title" />

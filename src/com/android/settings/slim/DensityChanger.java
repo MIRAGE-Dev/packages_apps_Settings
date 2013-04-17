@@ -234,14 +234,25 @@ public class DensityChanger extends SettingsPreferenceFragment implements
 
     private class ClearMarketDataTask extends AsyncTask<String, Void, Boolean> {
         protected Boolean doInBackground(String... stuff) {
+            String vending = "/data/data/com.android.vending/";
             String gms = "/data/data/com.google.android.gms/";
             String gsf = "/data/data/com.google.android.gsf/";
 
+            CommandResult cr = new CMDProcessor().su.runWaitFor("ls " + vending);
             CommandResult cr_gms = new CMDProcessor().su.runWaitFor("ls " + gms);
             CommandResult cr_gsf = new CMDProcessor().su.runWaitFor("ls " + gsf);
 
-            if (cr_gms.stdout == null || cr_gsf.stdout == null)
+            if (cr.stdout == null || cr_gms.stdout == null || cr_gsf.stdout == null)
                 return false;
+
+            for (String dir : cr.stdout.split("\n")) {
+                if (!dir.equals("lib")) {
+                    String c = "rm -r " + vending + dir;
+                    // Log.i(TAG, c);
+                    if (!new CMDProcessor().su.runWaitFor(c).success())
+                        return false;
+                }
+            }
 
             for (String dir_gms : cr_gms.stdout.split("\n")) {
                 if (!dir_gms.equals("lib")) {

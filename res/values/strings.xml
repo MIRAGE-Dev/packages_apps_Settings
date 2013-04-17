@@ -5214,16 +5214,16 @@
     <string name="summary_no_notifications_pulldown">Pulldown quick settings if no notifications are present</string>
 
     <!-- QuickSettings style options -->
-    <string name="quicksettings_tiles_style">Quicksettings Style</string>
-    <string name="summary_quicksettings_tiles_style">Show or change quicksettings style options</string>
-    <string name="quicksettings_tiles_style_additional_options">Additional</string>
-    <string name="tiles_per_row_title">Tiles Per Row</string>
-    <string name="tiles_per_row_duplicate_landscape_title">Landscape Quantity</string>
-    <string name="tiles_per_row_duplicate_landscape_summary">Landscape view doubles tiles per row</string>
-    <string name="quick_tiles_bg_color_title">Background Color</string>
+    <string name="quicksettings_tiles_style">Quick Settings style</string>
+    <string name="summary_quicksettings_tiles_style">Show or change Quick Settings style options</string>
+    <string name="quicksettings_tiles_style_additional_options">Additional options</string>
+    <string name="tiles_per_row_title">Tiles per row</string>
+    <string name="tiles_per_row_duplicate_landscape_title">Scale landscape quantity</string>
+    <string name="tiles_per_row_duplicate_landscape_summary">Landscape view doubles tiles per row quantity</string>
+    <string name="quick_tiles_bg_color_title">Tiles background color</string>
     <string name="quick_tiles_bg_pressed_color_title">Tiles pressed background color</string>
-    <string name="quick_tiles_text_color_title">Text Color</string>
-    <string name="quick_settings_style_reset">Reset Colors</string>
+    <string name="quick_tiles_text_color_title">Tiles text color</string>
+    <string name="quick_settings_style_reset">Reset colors</string>
 
     <!-- Reset tiles -->
     <string name="tiles_reset_title">Reset</string>
@@ -5663,68 +5663,6 @@
     <string name="nav_bar_alpha_mode_always">always</string>
     <string name="nav_bar_style_reset">Reset</string>
 
-    <!-- Pie Controls -->
-    <string name="pie_controls_title">Pie Controls</string>
-    <string name="pie_controls_summary">Allows navigation and status report</string>
-    <string name="pie_targets_title">Targets</string>
-    <string name="pie_gravity_title">Pie Gravity</string>
-    <string name="pie_gravity_summary">Select the location where Pie will be placed at</string>
-    <string name="pie_gravity_top">Top</string>
-    <string name="pie_gravity_bottom">Bottom</string>
-    <string name="pie_gravity_right">Right</string>
-    <string name="pie_gravity_left">Left</string>
-    <string name="pie_mode_title">Pie Style</string>
-    <string name="pie_mode_summary">Manage how animations and status additions will be handled</string>
-    <string name="pie_mode_bare">Bare</string>
-    <string name="pie_mode_quick">Quick</string>
-    <string name="pie_mode_default">Default</string>
-    <string name="pie_mode_slow">Slow</string>
-    <string name="pie_size_title">Pie Size</string>
-    <string name="pie_size_summary">Define Pie controls size</string>
-    <string name="pie_size_small">Small</string>
-    <string name="pie_size_default">@string/pie_mode_default</string>
-    <string name="pie_size_large">Large</string>
-    <string name="pie_size_gigantic">Gigantic</string>
-    <string name="pie_color_title">Pie Colors</string>
-    <string name="pie_color_style_title">Pie Color Style</string>
-    <string name="pie_background_title">Background Color</string>
-    <string name="pie_select_title">Selection Color</string>
-    <string name="pie_outlines_title">Outlines Color</string>
-    <string name="pie_status_clock_title">Clock Color</string>
-    <string name="pie_status_title">Status Color</string>
-    <string name="pie_chevron_left_title">Left Chevron color</string>
-    <string name="pie_chevron_right_title">Right Chevron color</string>
-    <string name="pie_juice_title">Battery Juice Color</string>
-    <string name="pie_button_color_title">Buttons Color</string>
-    <string name="pie_gap_title">Pie Gap</string>
-    <string name="pie_gap_summary">Adjust the gap that separates Pie elements</string>
-    <string name="pie_gap_none">None</string>
-    <string name="pie_gap_small">Small</string>
-    <string name="pie_gap_big">Big</string>
-    <string name="pie_gap_huge">Huge (Default)</string>
-    <string name="pie_center_title">Center Pie</string>
-    <string name="pie_center_summary">If un-checked, pie will appear where your fingers trigger it</string>
-    <string name="pie_trigger_title">Trigger Size</string>
-    <string name="pie_trigger_summary">Determine the size of the triggering area that will start pie controls</string>
-    <string name="pie_trigger_small">Small</string>
-    <string name="pie_trigger_normal">Normal (Default)</string>
-    <string name="pie_trigger_big">Big</string>
-    <string name="pie_trigger_huge">Huge</string>
-    <string name="pie_notifications_title">Enable Chevron Targets</string>
-    <string name="pie_notifications_summary">Enabling, will let the Notification panels and QuickSettings active when swipe.</string>
-    <string name="pie_menu_title">Show Menu Always</string>
-    <string name="pie_menu_summary">Whether or not the menu button will appear when unneeded</string>
-    <string name="pie_search_title">Show Search Button</string>
-    <string name="pie_search_summary">Access to GoogleNow via Pie</string>
-    <string name="pie_lastapp_title">Last App Button</string>
-    <string name="pie_lastapp_summary">Enable last app button on Pie</string>
-    <string name="pie_stick_title">Prevent Rotation</string>
-    <string name="pie_stick_summary">If checked Pie will stay in place no matter which orientation</string>
-    <string name="all_color">Custom Colors</string>
-    <string name="stock_color">Default Colors</string>
-    <string name="pie_restart_launcher_title">Restart Launcher</string>
-    <string name="pie_restart_launcher_summary">Changing screensize can have side effects</string>
-
     <!-- Nav Ring Targets -->
     <string name="navbar_ring_cat">Navigation Bar Ring Targets</string>
     <string name="interface_softkey_settings">Softkey Settings</string>
@@ -5794,7 +5732,7 @@
     <string name="touchkey_timeout_alwayson">Always On</string>
     <string name="touchkey_timeout_alwaysoff">Always Off</string>
 
-    <!-- Recents Rambar -->
+    <!-- Recents Ram Bar -->
     <string name="ram_bar">Recents RAM bar</string>
     <string name="ram_bar_note_title">Note</string>
     <string name="ram_bar_note_summary">This RAM bar shows the actual android memory (RAM) utilization. Please note that having cached apps helps your device open apps much faster. For further explanations on how android memory (RAM) management works, check the help menu.</string>
