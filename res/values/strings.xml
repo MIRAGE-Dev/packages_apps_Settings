@@ -4775,6 +4775,7 @@
 
     <!-- Power menu enable disable -->
     <string name="power_menu_title">Power menu</string>
+    <string name="power_menu_title_summary">You can customize Power menu</string>
     <string name="power_menu_reboot_title">Reboot menu</string>
     <string name="power_menu_screenshot_title">Screenshot</string>
     <string name="power_menu_expanded_desktop">Expanded desktop</string>
@@ -4816,6 +4817,7 @@
 
     <!-- Sound settings screen Slim-->
     <string name="sound_title">Sound</string>
+    <string name="sound_title_summary">Setting shutter sound or volume functions</string>
     <string name="volbtn_music_controls_title">Volume rocker music controls</string>
     <string name="volbtn_music_controls_summary">When screen off, long-pressing the volume rockers will seek music tracks</string>
     <!-- Sound settings screen, setting check box label -->
@@ -4841,6 +4843,7 @@
 
     <!-- Status bar -->
     <string name="status_bar_title">Status bar</string>
+    <string name="status_bar_title_summary">Setting battery style or Clock and date</string>
     <string name="status_bar_general_title">General</string>
     <string name="status_bar_style_title">Style</string>
     <string name="status_bar_signal_text_title">Signal status style</string>
@@ -4890,6 +4893,7 @@
 
     <!-- General Settings -->
     <string name="title_slim_general">General</string>
+    <string name="title_slim_general_summary">Changing LCD or Custom carrier</string>
     <string name="display_short">Display</string>
     <string name="misc_short">Misc</string>
     <string name="alt_resolver">Alt default app grid</string>
@@ -5028,6 +5032,7 @@
 
     <!-- Slim display settings -->
     <string name="display_title">Display</string>
+    <string name="display_title_summary">Setting your Display</string>
     <string name="display_category_rotation_options_title">Rotation options</string>
     <string name="display_category_light_options_title">Light options</string>
     <string name="display_category_brightness_options_title">Brightness options</string>
@@ -5133,6 +5138,7 @@
 
     <!-- Notification drawer settings  -->
     <string name="notification_drawer_title">Notification drawer</string>
+    <string name="notification_drawer_title_summary">Setting your Quick Settings</string>
     <string name="notification_style_grouptitle">Style</string>
     <string name="notification_style_title">Notification drawer style</string>
     <string name="notification_style_summary">Change your notification drawer style</string>
@@ -5273,6 +5279,7 @@
 
     <!-- Keyboard and Input ASS methods  -->
     <string name="title_keyboard_input">Keyboard and input methods</string>
+    <string name="title_keyboard_input_summary">Setting Keyboard options</string>
     <string name="disable_fullscreen_keyboard_title">Disable fullscreen keyboard</string>
     <string name="disable_fullscreen_keyboard_summary">Landscape keyboard will never take up entire screen</string>
     <string name="volume_key_cursor_control_title">Volume key cursor control</string>
@@ -5308,7 +5315,8 @@
     <string name="root_access_all">Apps and ADB</string>
 
     <!-- Lock Screen ASS -->
-    <string name="lock_screen_title">Lock screen</string>
+    <string name="lock_screen_title">Lock Screen</string>
+    <string name="lock_screen_title_summary">Setting your Lock Screen</string>
     <string name="lockscreen_additional_options_grouptitle">Additional options</string>
     <string name="lockscreen_slider_grouptitle">Slider and shortcut options</string>
     <string name="lockscreen_security_grouptitle">Security options</string>
@@ -5596,6 +5604,7 @@
 
     <!-- Navigation Bar -->
     <string name="navigation_bar">Navigation bar</string>
+    <string name="navigation_bar_summary">Setting Navbar stuff and Style</string>
     <string name="navbar_button_cat">Navigation bar buttons</string>
     <string name="title_pref_menu_display">Menu location</string>
     <string name="summary_pref_menu_display">Where do you want the menu buttons to appear?</string>
@@ -5706,6 +5715,7 @@
     <string name="navbar_widgets_note_title">Note</string>
     <string name="navbar_widgets_note_summary">To show up Widgets viewpager enable it in hardware keys, navigation bar buttons or navigation bar ring targets.</string>
     <string name="navbar_widgets_title">Widgets viewpager</string>
+    <string name="navbar_widgets_title_summary">Setting your custom Widgets</string>
     <string name="navbar_widgets_style_settings_title">Widgets viewpager style</string>
     <string name="navbar_widgets_style_settings_summary">Change widgets viewpager background style</string>
     <string name="navbar_widgets_summary">Add your custom widgets to the viewpager</string>
@@ -5755,6 +5765,7 @@
 
     <!-- Wifi settings -->
     <string name="ass_wifi_settings_title">Wi-Fi</string>
+    <string name="ass_wifi_settings_title_summary">Setting Wi-Fi region and priority</string>
     <!-- Wi-Fi region code settings-->
     <string name="wifi_setting_countrycode_title">Wi-Fi region code</string>
     <!-- Wi-Fi settings screen, setting summary for setting the wifi frequency band [CHAR LIMIT=50]. -->
@@ -5827,6 +5838,7 @@
 
     <!-- Quick/Pie Control -->
     <string name="pie_control_title">SlimPIE</string>
+    <string name="pie_control_title_summary">Allows navigation and status report</string>
     <string name="pie_control_dialog_title">SlimPIE</string>
     <string name="pie_control_always">Show always</string>
     <string name="pie_control_expanded">Only on expanded desktop mode</string>
