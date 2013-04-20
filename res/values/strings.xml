@@ -5293,7 +5293,7 @@
     <string name="keyboard_rotation_dialog">Note: This feature forces auto-rotate to turn on temporarily while the keyboard is out.  It has no effect when auto-rotate is already enabled.</string>
 
     <!-- About phone screen,  setting option name-->
-    <string name="mod_version">Slim version</string>
+    <string name="mod_version">MIRAGE version</string>
     <string name="mod_version_default">Unknown</string>
 
     <!-- Launches Dev Tools -->
@@ -5908,4 +5908,6 @@
     <string name="pie_action_notifications">Notifications</string>
     <string name="pie_action_none">None</string>
 
+    <string name="build_date">Build date</string>
+    <string name="build_date_default">2012-01-01-0000</string>
 </resources>
