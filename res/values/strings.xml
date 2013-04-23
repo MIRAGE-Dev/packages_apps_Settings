@@ -5202,6 +5202,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="title_tile_torch">Torch</string>
     <string name="title_tile_lockscreen">Lock screen</string>
     <string name="title_tile_lte">LTE</string>
+    <string name="title_tile_music">Music</string>
     <string name="title_tile_mobiledata">Mobile data</string>
     <string name="title_tile_mobilenetwork">Mobile network</string>
     <string name="title_tile_expanded_desktop">Expanded desktop</string>
@@ -5342,6 +5343,12 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="root_access_apps">Apps only</string>
     <string name="root_access_adb">ADB only</string>
     <string name="root_access_all">Apps and ADB</string>
+
+    <!-- MediaScanner behavior on boot -->
+    <string name="media_scanner_on_boot_title">MediaScanner behavior on boot</string>
+    <string name="media_scanner_on_boot_enabled">Scan media</string>
+    <string name="media_scanner_on_boot_ask">Ask to scan (notification)</string>
+    <string name="media_scanner_on_boot_disabled">Do not scan media</string>
 
     <!-- Lock Screen ASS -->
     <string name="lock_screen_title">Lock Screen</string>
