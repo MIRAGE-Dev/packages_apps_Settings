@@ -226,7 +226,7 @@ public class DevelopmentSettings extends PreferenceFragment
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
-        mUnofficialBuild = android.os.Build.VERSION.CODENAME.equals("UNOFFICIAL");
+        mUnofficialBuild = android.os.Build.VERSION.CODENAME.equals("FREEZE");
 
         mWindowManager = IWindowManager.Stub.asInterface(ServiceManager.getService("window"));
         mBackupManager = IBackupManager.Stub.asInterface(
