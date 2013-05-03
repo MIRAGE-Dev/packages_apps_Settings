@@ -2938,6 +2938,7 @@
     <string name="size_44_dp">44 dp</string>
     <string name="size_40_dp">40 dp</string>
     <string name="size_42_dp">42 dp</string>
+    <string name="size_0_dp">0 dp (выкл)</string>
     <string name="statusbar">Строка состояния</string>
     <string name="top_of_navbar">Верх строки навигации</string>
     <string name="bottom_of_navbar">Низ строки навигации</string>
@@ -3210,6 +3211,8 @@
     <string name="pie_snap_color_title">Цвет точек привязки</string>
     <string name="pie_text_color_title">Цвет текста</string>
     <string name="pie_background_alpha_title">Цвет фона</string>
+    <string name="pie_mirror_right_title">Зеркальный pie справа</string>
+    <string name="pie_mirror_right_summary">Зеркально отражать правый pie по горизонтали</string>
     <string name="pie_style">Стиль и размеры</string>
     <string name="pie_style_title">Стиль</string>
     <string name="pie_dimens_title">Размеры</string>
