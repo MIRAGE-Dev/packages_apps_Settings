@@ -44,23 +44,25 @@ public class SoundSettings extends SettingsPreferenceFragment implements
     private static final String TAG = "SoundSettings";
 
     private static final String KEY_VOLUME_OVERLAY = "volume_overlay";
-    private static final String KEY_SAFE_HEADSET_RESTORE = "safe_headset_restore";
+    private static final String KEY_SAFE_HEADSET_VOLUME = "safe_headset_volume";
     private static final String KEY_VOLBTN_MUSIC_CTRL = "volbtn_music_controls";
     private static final String KEY_CONVERT_SOUND_TO_VIBRATE = "notification_convert_sound_to_vibration";
     private static final String KEY_VOLUME_ADJUST_SOUNDS = "volume_adjust_sounds";
     private static final String KEY_LOCK_VOLUME_KEYS = "lock_volume_keys";
     private static final String PREF_LESS_NOTIFICATION_SOUNDS = "less_notification_sounds";
+    private static final String KEY_VOL_RING = "volume_keys_control_ring_stream";
     private static final String KEY_CAMERA_SOUNDS = "camera_sounds";
     private static final String PROP_CAMERA_SOUND = "persist.sys.camera-sound";
 
     private final Configuration mCurConfig = new Configuration();
 
     private ListPreference mVolumeOverlay;
-    private CheckBoxPreference mSafeHeadsetRestore;
+    private CheckBoxPreference mSafeHeadsetVolume;
     private CheckBoxPreference mVolBtnMusicCtrl;
     private CheckBoxPreference mConvertSoundToVibration;
     private CheckBoxPreference mVolumeAdjustSounds;
     private CheckBoxPreference mLockVolumeKeys;
+    private CheckBoxPreference mVolumeKeysControlRing;
     private ListPreference mAnnoyingNotifications;
     private CheckBoxPreference mCameraSounds;
 
@@ -79,10 +81,10 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         mVolumeOverlay.setValue(Integer.toString(volumeOverlay));
         mVolumeOverlay.setSummary(mVolumeOverlay.getEntry());
 
-        mSafeHeadsetRestore = (CheckBoxPreference) findPreference(KEY_SAFE_HEADSET_RESTORE);
-        mSafeHeadsetRestore.setPersistent(false);
-        mSafeHeadsetRestore.setChecked(Settings.System.getInt(resolver,
-                Settings.System.SAFE_HEADSET_VOLUME_RESTORE, 1) != 0);
+        mSafeHeadsetVolume = (CheckBoxPreference) findPreference(KEY_SAFE_HEADSET_VOLUME);
+        mSafeHeadsetVolume.setPersistent(false);
+        mSafeHeadsetVolume.setChecked(Settings.System.getInt(resolver,
+                Settings.System.SAFE_HEADSET_VOLUME, 1) != 0);
 
         mVolBtnMusicCtrl = (CheckBoxPreference) findPreference(KEY_VOLBTN_MUSIC_CTRL);
         mVolBtnMusicCtrl.setChecked(Settings.System.getInt(resolver,
@@ -100,6 +102,10 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         mLockVolumeKeys = (CheckBoxPreference) findPreference(KEY_LOCK_VOLUME_KEYS);
         mLockVolumeKeys.setChecked(Settings.System.getInt(resolver,
                 Settings.System.LOCK_VOLUME_KEYS, 0) != 0);
+
+        mVolumeKeysControlRing = (CheckBoxPreference) findPreference(KEY_VOL_RING);
+        mVolumeKeysControlRing.setChecked(Settings.System.getInt(resolver,
+                Settings.System.VOLUME_KEYS_CONTROL_RING_STREAM, 0) != 0);
 
         mCameraSounds = (CheckBoxPreference) findPreference(KEY_CAMERA_SOUNDS);
         mCameraSounds.setPersistent(false);
@@ -132,10 +138,9 @@ public class SoundSettings extends SettingsPreferenceFragment implements
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
 
-        if (preference == mSafeHeadsetRestore) {
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.SAFE_HEADSET_VOLUME_RESTORE,
-                    mSafeHeadsetRestore.isChecked() ? 1 : 0);
+        if (preference == mSafeHeadsetVolume) {
+            Settings.System.putInt(getContentResolver(), Settings.System.SAFE_HEADSET_VOLUME,
+                    mSafeHeadsetVolume.isChecked() ? 1 : 0);
 
         } else if (preference == mVolBtnMusicCtrl) {
             Settings.System.putInt(getContentResolver(), Settings.System.VOLBTN_MUSIC_CONTROLS,
@@ -152,6 +157,10 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         } else if (preference == mLockVolumeKeys) {
             Settings.System.putInt(getContentResolver(), Settings.System.LOCK_VOLUME_KEYS,
                     mLockVolumeKeys.isChecked() ? 1 : 0);
+
+        } else if (preference == mVolumeKeysControlRing) {
+            Settings.System.putInt(getContentResolver(), Settings.System.VOLUME_KEYS_CONTROL_RING_STREAM,
+                    mVolumeKeysControlRing.isChecked() ? 1 : 0);
 
         } else if (preference == mCameraSounds) {
             SystemProperties.set(PROP_CAMERA_SOUND, mCameraSounds.isChecked() ? "1" : "0");

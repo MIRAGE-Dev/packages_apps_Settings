@@ -4800,6 +4800,8 @@
 
     <string name="link_volume_ringtones">Link ringtone &amp; notifications volumes</string>
     <string name="link_volume_mutes">Silent mode affects notifications</string>
+    <string name="volume_keys_control_ring_stream">Media control</string>
+    <string name="volume_keys_control_ring_stream_summary">Volume keys control media volume rather than notifications</string>
     <string name="ring_mode_title">Ring mode</string>
     <string name="ring_mode_normal">Normal</string>
     <string name="ring_mode_vibrate">Vibrate</string>
@@ -4820,8 +4822,8 @@
     <string name="volume_adjust_sounds_enable_summary">Play sound when adjusting volume with volumerocker</string>
 
     <!-- Safe headset volume restore checkbox -->
-    <string name="safe_headset_restore_title">Safe headset volume</string>
-    <string name="safe_headset_restore_summary">Prevent loud volume levels when headset is first plugged in</string>
+    <string name="safe_headset_volume_title">Safe headset volume</string>
+    <string name="safe_headset_volume_summary">Prevent loud volume levels when headset is first plugged in</string>
 
     <!-- Less Notification sounds -->
     <string name="less_notification_sounds_title">Less frequent notification sounds</string>
@@ -5567,6 +5569,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="hardware_keys_action_last_app">Last app</string>
     <string name="hardware_keys_action_custom_app">Custom app</string>
     <string name="hardware_keys_action_widgets">Widgets viewpager</string>
+    <string name="hardware_keys_action_quicksettings">Quicksettings panel</string>
 
     <!--- Sms security limit -->
     <string name="app_security_title">App security</string>
@@ -5594,6 +5597,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="widgets">Widgets viewpager</string>
     <string name="lastapp">Last app</string>
     <string name="power">Screen off</string>
+    <string name="quicksettings">Quicksettings panel</string>
     <string name="notifications">Notifications</string>
     <string name="custom_app">Custom app</string>
     <string name="blank">None</string>
@@ -5656,6 +5660,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="navbar_action_widgets">Widgets viewpager</string>
     <string name="navbar_action_power">Screen Off</string>
     <string name="navbar_action_notifications">Notifications</string>
+    <string name="navbar_action_quicksettings">Quicksettings panel</string>
     <string name="navbar_action_none">None</string>
     <string name="navbar_enable_bar">Enable navigation bar</string>
     <string name="navbar_enable_bar_summary">Enable the navigation bar</string>
@@ -5951,6 +5956,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="pie_action_widgets">Widgets viewpager</string>
     <string name="pie_action_power">Screen Off</string>
     <string name="pie_action_notifications">Notifications</string>
+    <string name="pie_action_quicksettings">Quicksettings panel</string>
     <string name="pie_action_none">None</string>
 
     <!-- Category title for power sound notification specific Settings.
