@@ -80,7 +80,7 @@ public class PieButtonStyleSettings extends SettingsPreferenceFragment implement
                 mSystemUiResources = pm.getResourcesForApplication("com.android.systemui");
             } catch (Exception e) {
                 mSystemUiResources = null;
-                Log.e(Tag, "can't access systemui resources", e);
+                Log.e(TAG, "can't access systemui resources", e);
             }
         }
 

@@ -167,7 +167,7 @@ public class StatusBarClockStyle extends SettingsPreferenceFragment implements O
             int intHex = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.STATUSBAR_CLOCK_COLOR, intHex);
-            Log.e(Tag, intHex);
+            Log.e(TAG, intHex);
             return true;
         } else if (preference == mClockDateDisplay) {
             int val = Integer.parseInt((String) newValue);
