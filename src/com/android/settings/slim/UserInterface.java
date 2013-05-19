@@ -44,8 +44,6 @@ import android.widget.EditText;
 
 public class UserInterface extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
-    public static final String TAG = "UserInterface";
-
     private static final String MISC_SETTINGS = "misc";
     private static final String PREF_USE_ALT_RESOLVER = "use_alt_resolver";
     private static final String KEY_RECENTS_RAM_BAR = "recents_ram_bar";

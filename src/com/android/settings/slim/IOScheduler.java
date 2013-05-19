@@ -38,8 +38,6 @@ public class IOScheduler extends SettingsPreferenceFragment implements
 
     public static final String SOB_PREF = "pref_io_sched_set_on_boot";
 
-    private static final String TAG = "IOScheduler";
-
     private String mIOSchedulerFormat;
 
     private ListPreference mIOSchedulerPref;

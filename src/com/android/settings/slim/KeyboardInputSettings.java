@@ -26,7 +26,6 @@ import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
-import android.util.Log;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -34,8 +33,6 @@ import com.android.settings.Utils;
 
 public class KeyboardInputSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
-
-    private static final String TAG = "KeyboardInputSettings";
 
     private static final String PREF_DISABLE_FULLSCREEN_KEYBOARD = "disable_fullscreen_keyboard";
     private static final String KEY_IME_SWITCHER = "status_bar_ime_switcher";

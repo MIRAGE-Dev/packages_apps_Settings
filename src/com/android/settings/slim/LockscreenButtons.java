@@ -38,8 +38,6 @@ import com.android.settings.Utils;
 public class LockscreenButtons extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener {
 
-    private static final String TAG = "LockscreenButtons";
-
     private static final String LONG_PRESS_BACK = "lockscreen_long_press_back";
     private static final String LONG_PRESS_HOME = "lockscreen_long_press_home";
     private static final String LONG_PRESS_MENU = "lockscreen_long_press_menu";

@@ -33,8 +33,6 @@ import com.android.settings.SettingsPreferenceFragment;
  */
 public class PerformanceSettings extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener {
-    private static final String TAG = "PerformanceSettings";
-
     private static final String USE_DITHERING_PREF = "pref_use_dithering";
 
     private static final String USE_DITHERING_PERSIST_PROP = "persist.sys.use_dithering";

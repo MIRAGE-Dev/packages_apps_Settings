@@ -31,7 +31,6 @@ import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
-import android.util.Log;
 import android.view.IWindowManager;
 import android.view.VolumePanel;
 
@@ -41,7 +40,6 @@ import com.android.settings.Utils;
 
 public class SoundSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
-    private static final String TAG = "SoundSettings";
 
     private static final String KEY_VOLUME_OVERLAY = "volume_overlay";
     private static final String KEY_SAFE_HEADSET_VOLUME = "safe_headset_volume";

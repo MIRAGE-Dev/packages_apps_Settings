@@ -79,7 +79,7 @@ public class PieStyleSettings extends SettingsPreferenceFragment implements
                 mSystemUiResources = pm.getResourcesForApplication("com.android.systemui");
             } catch (Exception e) {
                 mSystemUiResources = null;
-                Log.e("PIEStyle:", "can't access systemui resources",e);
+                Log.e(Tag, "can't access systemui resources", e);
             }
         }
 

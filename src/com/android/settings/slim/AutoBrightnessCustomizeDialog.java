@@ -29,7 +29,6 @@ import android.os.PowerManager;
 import android.provider.Settings;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.util.Spline;
 import android.view.ContextMenu;
 import android.view.Menu;
@@ -57,7 +56,6 @@ import com.android.settings.R;
 
 public class AutoBrightnessCustomizeDialog extends AlertDialog
         implements DialogInterface.OnClickListener, DialogInterface.OnDismissListener {
-    private static final String TAG = "AutoBrightnessCustomizeDialog";
 
     private TextView mSensorLevel;
     private ListView mConfigList;

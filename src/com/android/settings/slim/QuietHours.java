@@ -29,7 +29,6 @@ import com.android.settings.SettingsPreferenceFragment;
 public class QuietHours extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener  {
 
-    private static final String TAG = "QuietHours";
     private static final String KEY_QUIET_HOURS_ENABLED = "quiet_hours_enabled";
     private static final String KEY_QUIET_HOURS_MUTE = "quiet_hours_mute";
     private static final String KEY_QUIET_HOURS_STILL = "quiet_hours_still";

@@ -28,7 +28,6 @@ import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -42,7 +41,6 @@ import net.margaritov.preference.colorpicker.ColorPickerPreference;
 public class StatusBarStyle extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
-    private static final String TAG = "StatusBarStyle";
     private static final String PREF_STATUS_BAR_ALPHA = "status_bar_alpha";
     private static final String PREF_STATUS_BAR_ALPHA_MODE = "status_bar_alpha_mode";
     private static final String PREF_STATUS_BAR_COLOR = "status_bar_color";

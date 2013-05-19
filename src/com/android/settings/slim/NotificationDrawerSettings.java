@@ -33,7 +33,6 @@ import com.android.settings.Utils;
 public class NotificationDrawerSettings extends SettingsPreferenceFragment
             implements OnPreferenceChangeListener  {
 
-    public static final String TAG = "NotificationDrawerSettings";
     private static final String PREF_NOTIFICATION_SHOW_WIFI_SSID = "notification_show_wifi_ssid";
     private static final String PREF_NOTIFICATION_OPTIONS = "options";
     private static final String PREF_NOTIFICATION_POWER_WIDGET = "power_widget";

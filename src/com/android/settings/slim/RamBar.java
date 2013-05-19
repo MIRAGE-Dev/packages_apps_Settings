@@ -28,7 +28,6 @@ import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -41,8 +40,6 @@ import net.margaritov.preference.colorpicker.ColorPickerPreference;
 import java.util.Date;
 
 public class RamBar extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
-
-    private static final String TAG = "RamBar";
 
     private static final String RAM_BAR_MODE = "ram_bar_mode";
     private static final String RAM_BAR_COLOR_APP_MEM = "ram_bar_color_app_mem";

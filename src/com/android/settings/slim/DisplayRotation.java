@@ -32,7 +32,6 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
 public class DisplayRotation extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
-    private static final String TAG = "DisplayRotation";
 
     private static final String KEY_ACCELEROMETER = "accelerometer";
     private static final String ROTATION_0_PREF = "display_rotation_0";

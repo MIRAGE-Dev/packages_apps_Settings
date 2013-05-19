@@ -37,7 +37,6 @@ import com.android.settings.R;
 
 public class IncreasingRingPreference extends VolumePreference implements
         CheckBox.OnCheckedChangeListener {
-    private static final String TAG = "IncreasingRingPreference";
 
     private CheckBox mEnabledCheckbox;
 

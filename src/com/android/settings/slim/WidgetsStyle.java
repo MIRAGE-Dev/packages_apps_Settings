@@ -25,7 +25,6 @@ import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -39,7 +38,6 @@ import net.margaritov.preference.colorpicker.ColorPickerPreference;
 public class WidgetsStyle extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
-    private static final String TAG = "WidgetsStyle";
     private static final String PREF_NAVBAR_WIDGETS_ALPHA = "navbar_widgets_alpha";
     private static final String PREF_NAVBAR_WIDGETS_BG_COLOR = "navbar_widgets_bg_color";
     private static final String PREF_NAVBAR_WIDGETS_TEXT_COLOR = "navbar_widgets_text_color";

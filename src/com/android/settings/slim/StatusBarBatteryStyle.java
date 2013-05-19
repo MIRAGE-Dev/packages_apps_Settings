@@ -26,7 +26,6 @@ import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
-import android.util.Log;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -36,8 +35,6 @@ import net.margaritov.preference.colorpicker.ColorPickerPreference;
 import java.util.Date;
 
 public class StatusBarBatteryStyle extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
-
-    private static final String TAG = "StatusBarBatteryStyle";
 
     private static final String PREF_STATUS_BAR_BATTERY = "status_bar_battery";
     private static final String PREF_BATTERY_COLOR_RESET = "battery_color_reset";

@@ -28,8 +28,6 @@ import com.android.settings.Utils;
 
 public class LockscreenWidgets extends SettingsPreferenceFragment {
 
-    private static final String TAG = "LockscreenWidgets";
-
     private static final String KEY_WIDGET_OPTIONS = "lockscreen_widgets_group";
     private static final String KEY_LOCKSCREEN_ALL_WIDGETS = "lockscreen_all_widgets";
     private static final String KEY_LOCKSCREEN_CAMERA_WIDGET = "lockscreen_camera_widget";

@@ -32,7 +32,6 @@ import com.android.settings.Utils;
 public class NavbarSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
-    private static final String TAG = "NavBar";
     private static final String PREF_MENU_UNLOCK = "pref_menu_display";
     private static final String PREF_GLOW_TIMES = "glow_times";
     private static final String PREF_NAVBAR_MENU_DISPLAY = "navbar_menu_display";

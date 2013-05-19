@@ -163,7 +163,7 @@ public class NavBarButtonStyle extends SettingsPreferenceFragment implements
             return true;
        } else if (preference == mButtonAlpha) {
             float val = Float.parseFloat((String) newValue);
-            Log.e("R", "value: " + val / 100);
+            Log.e(TAG, "value: " + val / 100);
             Settings.System.putFloat(getActivity().getContentResolver(),
                     Settings.System.NAVIGATION_BAR_BUTTON_ALPHA,
                     val / 100);

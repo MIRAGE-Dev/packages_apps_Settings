@@ -29,7 +29,6 @@ import com.android.settings.Utils;
 
 public class WidgetsSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
-    private static final String TAG = "WidgetsSettings";
 
     private static final String NAVIGATION_BAR_WIDGETS = "navigation_bar_widgets";
 
