@@ -33,7 +33,6 @@ import android.preference.PreferenceScreen;
 import android.preference.PreferenceCategory;
 import android.provider.Settings;
 import android.text.TextUtils;
-import android.util.Log;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -47,7 +46,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class QuickSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
-    private static final String TAG = "QuickSettings";
 
     private static final String SEPARATOR = "OV=I=XseparatorX=I=VO";
     private static final String EXP_RING_MODE = "pref_ring_mode";

@@ -320,7 +320,6 @@ public class AutoBrightnessCustomizeDialog extends AlertDialog
         }
 
         if (lux != null && values != null && lux.length != values.length - 1) {
-            Log.e(TAG, "Found invalid backlight settings, ignoring");
             values = null;
         }
 
