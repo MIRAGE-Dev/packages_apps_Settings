@@ -4444,7 +4444,6 @@
 
     <!-- MIRAGE Extra Settings -->
     <!-- START -->
-    <string name="slim_center_title">SlimCenter</string>
 
     <!-- Quiet hours -->
     <string name="quiet_hours_title">Quiet hours</string>
@@ -4810,7 +4809,7 @@
     <string name="volume_overlay_title">Volume panel style</string>
     <string name="volume_ring_only_description">Ringtone</string>
 
-    <!-- Sound settings screen Slim-->
+    <!-- Sound settings screen MIRAGE-->
     <string name="sound_title">Sound</string>
     <string name="volbtn_music_controls_title">Volume rocker music controls</string>
     <string name="volbtn_music_controls_summary">When screen off, long-pressing the volume rockers will seek music tracks</string>
@@ -4826,6 +4825,20 @@
     <!-- Less Notification sounds -->
     <string name="less_notification_sounds_title">Less frequent notification sounds</string>
     <string name="less_notification_sounds_summary">Limit the notification sounds of each app to only play once per set time period</string>
+
+    <!-- Category title for power sound notification specific Settings.
+         [CHAR LIMIT=40] -->
+    <string name="power_notifications_category_title">Power connectivity alert</string>
+
+    <!-- Sound settings, power notifications enable/disable, setting check box label -->
+    <string name="power_notifications_enable_title">Enable</string>
+    <string name="power_notifications_enable_summary">Alert when power is connected or disconnected</string>
+    <!-- Sound settings, power notifications vibrate enable/disable, setting check box label -->
+    <string name="power_notifications_vibrate_title">Vibrate</string>
+    <!-- Sound settings, power notifications ringtone selection, preference label -->
+    <string name="power_notifications_ringtone_title">Notification sound</string>
+    <!-- Sound settings, power notifications label for ringtone == none -->
+    <string name="power_notifications_ringtone_silent">Silent</string>
 
     <!-- Setting checkbox summary for displaying USB debugging notification -->
     <string name="adb_notify">USB debugging notify</string>
@@ -5022,7 +5035,7 @@
     <string name="notification_shortcuts_icon_picker_twitter">Twitter</string>
     <string name="notification_shortcuts_icon_picker_unlock">Unlock</string>
 
-    <!-- Slim display settings -->
+    <!-- MIRAGE display settings -->
     <string name="display_title">Display</string>
     <string name="display_category_rotation_options_title">Rotation options</string>
     <string name="display_category_light_options_title">Light options</string>
@@ -5859,8 +5872,8 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="auto_hide_statusbar_summary">Statusbar hides itself when there are no notifications</string>
 
     <!-- Quick/Pie Control -->
-    <string name="pie_control_title">SlimPIE</string>
-    <string name="pie_control_dialog_title">SlimPIE</string>
+    <string name="pie_control_title">MIRAGE PIE</string>
+    <string name="pie_control_dialog_title">MIRAGE PIE</string>
     <string name="pie_control_always">Show always</string>
     <string name="pie_control_expanded">Only on expanded desktop mode</string>
     <string name="pie_control_disabled">Disabled</string>
@@ -5948,19 +5961,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="pie_action_notifications">Notifications</string>
     <string name="pie_action_quicksettings">Quicksettings panel</string>
     <string name="pie_action_none">None</string>
-
-    <!-- Category title for power sound notification specific Settings.
-[CHAR LIMIT=40] -->
-    <string name="power_notifications_category_title">Power sounds</string>
-
-    <!-- Sound settings, power notifications enable/disable, setting check box label -->
-    <string name="power_notifications_enable_title">Enable</string>
-    <!-- Sound settings, power notifications vibrate enable/disable, setting check box label -->
-    <string name="power_notifications_vibrate_title">Vibrate</string>
-    <!-- Sound settings, power notifications ringtone selection, preference label -->
-    <string name="power_notifications_ringtone_title">Notification sound</string>
-    <!-- Sound settings, power notifications label for ringtone == none -->
-    <string name="power_notifications_ringtone_silent">Silent</string>
 
     <!-- MIRAGE Extra Settings -->
     <!-- FINISH -->
