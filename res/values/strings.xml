@@ -5989,6 +5989,9 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="pie_action_quicksettings">Quicksettings panel</string>
     <string name="pie_action_none">None</string>
 
+    <!-- Delete apn confirmation dialog message -->
+    <string name="confirm_delete_apn">The APN will be deleted.</string>
+
     <!-- MIRAGE Extra Settings -->
     <!-- FINISH -->
 
