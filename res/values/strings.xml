@@ -4397,6 +4397,9 @@
 
     <!-- Label for are-notifications-enabled checkbox in app details [CHAR LIMIT=20] -->
     <string name="app_notifications_switch_label">Show notifications</string>
+    <!-- Label for are-notifications-enabled checkbox in app details [CHAR LIMIT=20] -->
+    <string name="app_halo_label_black">Blacklist HALO notifications</string>
+    <string name="app_halo_label_white">Whitelist HALO notifications</string>
 
     <!--  Help URLs for some screens. Not specified here. Specified in product overlays --><skip/>
     <!-- Help menu label [CHAR LIMIT=20] -->
@@ -5194,6 +5197,17 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="notif_wallpaper_alpha_title">Notification background transparency</string>
     <string name="notif_alpha_title">Notification Rows transparency</string>
 
+    <!-- HALO -->
+    <string name="halo_options_title">HALO</string>
+    <string name="halo_hide_title">Hide HALO after activity</string>
+    <string name="halo_hide_summary">HALO will appear for incoming tasks and scroll out of sight after a while</string>
+    <string name="halo_reversed_title">Reverse HALO gestures</string>
+    <string name="halo_reversed_summary">Applies tasking or dragging to the double-tap-swipe gesture</string>
+    <string name="halo_state_title">HALO policy</string>
+    <string name="halo_state_summary">For black/white-listing notifications pinging through HALO</string>
+    <string name="halo_state_black">Black list</string>
+    <string name="halo_state_white">White list</string>
+
     <!-- Quick settings panel -->
     <string name="quick_settings_panel_title">Quick Settings panel</string>
     <string name="quick_settings_title">Quick Settings</string>
@@ -5201,7 +5215,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="tile_picker_title">Tiles and layout</string>
     <string name="tile_picker_summary">View, select or change the layout of the displayed tiles</string>
     <string name="tile_choose_title">Choose a tile</string>
-
     <string name="title_tile_airplane">Airplane mode</string>
     <string name="title_tile_battery">Battery stats</string>
     <string name="title_tile_bluetooth">Bluetooth</string>
