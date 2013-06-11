@@ -325,9 +325,8 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                     Settings.System.SYSTEM_POWER_CRT_MODE, crtMode);
             mCrtMode.setSummary(mCrtMode.getEntries()[index]);
             return true;
-        }
         } else if (preference == mHaloState) {
-            boolean state = Integer.valueOf((String) newValue) == 1;
+            boolean state = Integer.valueOf((String) objValue) == 1;
             try {
                 mNotificationManager.setHaloPolicyBlack(state);
             } catch (android.os.RemoteException ex) {
