@@ -110,9 +110,9 @@
 
     <PreferenceCategory
         android:key="halo_options"
-        aandroid:title="@string/halo_options_title">
+        android:title="@string/halo_options_title" >
 
-       <ListPreference
+        <ListPreference
             android:key="halo_state"
             android:dialogTitle="@string/halo_state_title"
             android:title="@string/halo_state_title"
