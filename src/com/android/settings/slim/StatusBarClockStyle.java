@@ -52,6 +52,7 @@ public class StatusBarClockStyle extends SettingsPreferenceFragment implements O
     private static final String PREF_CLOCK_DATE_STYLE = "clock_date_style";
     private static final String PREF_CLOCK_DATE_FORMAT = "clock_date_format";
     private static final String STATUS_BAR_CLOCK = "status_bar_show_clock";
+    private static final String STATUS_BAR_USE_SECOND = "status_bar_use_second";
 
     public static final int CLOCK_DATE_STYLE_LOWERCASE = 1;
     public static final int CLOCK_DATE_STYLE_UPPERCASE = 2;
@@ -64,6 +65,7 @@ public class StatusBarClockStyle extends SettingsPreferenceFragment implements O
     ListPreference mClockDateStyle;
     ListPreference mClockDateFormat;
     private CheckBoxPreference mStatusBarClock;
+    private CheckBoxPreference mStatusBarSecond;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -122,6 +124,10 @@ public class StatusBarClockStyle extends SettingsPreferenceFragment implements O
         mStatusBarClock.setChecked((Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
                 Settings.System.STATUS_BAR_CLOCK, 1) == 1));
 
+        mStatusBarSecond = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_USE_SECOND);
+        mStatusBarSecond.setChecked((Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
+                Settings.System.CLOCK_USE_SECOND, 1) == 1));
+
         try {
             if (Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
                     Settings.System.TIME_12_24) == 24) {
@@ -158,6 +164,13 @@ public class StatusBarClockStyle extends SettingsPreferenceFragment implements O
             result = Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.STATUSBAR_CLOCK_STYLE, val);
             mClockStyle.setSummary(mClockStyle.getEntries()[index]);
+            return true;
+        } else if (preference == mStatusBarSecond) {
+            int val = Integer.parseInt((String) newValue);
+            int index = mStatusBarSecond.findIndexOfValue((String) newValue);
+            result = Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.CLOCK_USE_SECOND, val);
+            mStatusBarSecond.setSummary(mStatusBarSecond.getEntries()[index]);
             return true;
         } else if (preference == mColorPicker) {
             String hex = ColorPickerPreference.convertToARGB(Integer.valueOf(String
