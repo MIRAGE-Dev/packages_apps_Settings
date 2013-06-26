@@ -165,13 +165,6 @@ public class StatusBarClockStyle extends SettingsPreferenceFragment implements O
                     Settings.System.STATUSBAR_CLOCK_STYLE, val);
             mClockStyle.setSummary(mClockStyle.getEntries()[index]);
             return true;
-        } else if (preference == mStatusBarSecond) {
-            int val = Integer.parseInt((String) newValue);
-            int index = mStatusBarSecond.findIndexOfValue((String) newValue);
-            result = Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.CLOCK_USE_SECOND, val);
-            mStatusBarSecond.setSummary(mStatusBarSecond.getEntries()[index]);
-            return true;
         } else if (preference == mColorPicker) {
             String hex = ColorPickerPreference.convertToARGB(Integer.valueOf(String
                     .valueOf(newValue)));
@@ -254,6 +247,11 @@ public class StatusBarClockStyle extends SettingsPreferenceFragment implements O
             value = mStatusBarClock.isChecked();
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
                     Settings.System.STATUS_BAR_CLOCK, value ? 1 : 0);
+            return true;
+        } else if (preference == mStatusBarSecond) {
+            value = mStatusBarSecond.isChecked();
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
+                    Settings.System.CLOCK_USE_SECOND, value ? 1 : 0);
             return true;
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
