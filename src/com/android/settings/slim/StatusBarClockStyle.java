@@ -126,7 +126,7 @@ public class StatusBarClockStyle extends SettingsPreferenceFragment implements O
 
         mStatusBarSecond = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_USE_SECOND);
         mStatusBarSecond.setChecked((Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
-                Settings.System.CLOCK_USE_SECOND, 1) == 1));
+                Settings.System.CLOCK_USE_SECOND, 0) == 1));
 
         try {
             if (Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
