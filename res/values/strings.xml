@@ -6011,6 +6011,8 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="halo_state_white">White list</string>
     <string name="halo_pause_title">HALO pause active app</string>
     <string name="halo_pause_summary">When opening an app with HALO the underlying app will get paused (enabled by default on low memory devices)</string>
+    <string name="halo_show_button">Show HALO Button</string>
+    <string name="halo_show_button_summary">Whether to show HALO button on statusbar</string>
 
     <!-- ListView animation -->
     <string name="listview_animation_title">ListView Animation</string>

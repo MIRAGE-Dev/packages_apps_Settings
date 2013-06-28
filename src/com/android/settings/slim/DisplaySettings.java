@@ -62,6 +62,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_HALO_HIDE = "halo_hide";
     private static final String KEY_HALO_REVERSED = "halo_reversed";
     private static final String KEY_HALO_PAUSE = "halo_pause";
+    private static final String KEY_HALO_SHOW_BUTTON = "halo_show_button";
 
     private static final String ROTATION_ANGLE_0 = "0";
     private static final String ROTATION_ANGLE_90 = "90";
@@ -85,6 +86,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private CheckBoxPreference mHaloHide;
     private CheckBoxPreference mHaloReversed;
     private CheckBoxPreference mHaloPause;
+    private CheckBoxPreference mHaloShowBtn;
 
     private boolean mIsCrtOffChecked = false;
 
@@ -129,9 +131,13 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         mHaloPause.setChecked(Settings.System.getInt(mContext.getContentResolver(),
                 Settings.System.HALO_PAUSE, isLowRAM) == 1);
 
+        mHaloShowBtn = (CheckBoxPreference) prefSet.findPreference(KEY_HALO_SHOW_BUTTON);
+        mHaloShowBtn.setChecked(Settings.System.getInt(mContext.getContentResolver(),
+                Settings.System.HALO_BUTTON_SHOW, 1) == 1);
+
         mListViewAnimation = (ListPreference) findPreference(KEY_LISTVIEW_ANIMATION);
         int listviewanimation = Settings.System.getInt(getActivity().getContentResolver(),
-                Settings.System.LISTVIEW_ANIMATION, 1);
+                Settings.System.LISTVIEW_ANIMATION, 0);
         mListViewAnimation.setValue(String.valueOf(listviewanimation));
         mListViewAnimation.setSummary(mListViewAnimation.getEntry());
         mListViewAnimation.setOnPreferenceChangeListener(this);
@@ -340,6 +346,9 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         } else if (preference == mHaloPause) {
             Settings.System.putInt(mContext.getContentResolver(),
                         Settings.System.HALO_PAUSE, mHaloPause.isChecked() ? 1 : 0);
+        } else if (preference == mHaloShowBtn) {
+            Settings.System.putInt(mContext.getContentResolver(),
+                        Settings.System.HALO_PAUSE, mHaloShowBtn.isChecked() ? 1 : 0);
         } else if (preference == mVolumeWake) {
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.VOLUME_WAKE_SCREEN,
