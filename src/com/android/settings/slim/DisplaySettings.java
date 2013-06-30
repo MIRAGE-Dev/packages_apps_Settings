@@ -58,6 +58,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_POWER_CRT_SCREEN_OFF = "system_power_crt_screen_off";
     private static final String KEY_LISTVIEW_ANIMATION = "listview_animation";
     private static final String KEY_LISTVIEW_INTERPOLATOR = "listview_interpolator";
+    private static final String KEY_HALO_ENABLED = "halo_enabled"
     private static final String KEY_HALO_STATE = "halo_state";
     private static final String KEY_HALO_HIDE = "halo_hide";
     private static final String KEY_HALO_REVERSED = "halo_reversed";
@@ -81,6 +82,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private CheckBoxPreference mCrtOff;
     private ListPreference mListViewAnimation;
     private ListPreference mListViewInterpolator;
+    private CheckBoxPreference mHaloEnabled;
     private ListPreference mHaloState;
     private CheckBoxPreference mHaloHide;
     private CheckBoxPreference mHaloReversed;
@@ -123,6 +125,10 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         mHaloReversed = (CheckBoxPreference) prefSet.findPreference(KEY_HALO_REVERSED);
         mHaloReversed.setChecked(Settings.System.getInt(mContext.getContentResolver(),
                 Settings.System.HALO_REVERSED, 1) == 1);
+
+        mHaloEnabled = (CheckBoxPreference) prefSet.findPreference(KEY_HALO_ENABLED);
+        mHaloEnabled.setChecked(Settings.System.getInt(mContext.getContentResolver(),
+                Settings.System.HALO_ENABLED, 0) == 1);
 
         int isLowRAM = (ActivityManager.isLargeRAM()) ? 0 : 1;
         mHaloPause = (CheckBoxPreference) prefSet.findPreference(KEY_HALO_PAUSE);
@@ -331,6 +337,9 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                     Settings.System.HOME_WAKE_SCREEN,
                     mHomeWake.isChecked() ? 1 : 0);
             return true;
+        } else if  (preference == mHaloEnabled) {
+            Settings.System.putInt(mContext.getContentResolver(),
+                    Settings.System.HALO_ENABLED, mHaloEnabled.isChecked() ? 1 : 0);
         } else if (preference == mHaloHide) {
             Settings.System.putInt(mContext.getContentResolver(),
                     Settings.System.HALO_HIDE, mHaloHide.isChecked() ? 1 : 0);
