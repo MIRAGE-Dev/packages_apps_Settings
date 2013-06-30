@@ -29,14 +29,6 @@
             android:title="@string/system_power_crt_screen_off_title" />
 
         <ListPreference
-            android:key="system_power_crt_mode"
-            android:dialogTitle="@string/system_power_crt_mode_dialog_title"
-            android:title="@string/system_power_crt_mode_title"
-            android:entries="@array/entries_system_power_crt_mode"
-            android:entryValues="@array/values_system_power_crt_mode"
-            android:dependency="system_power_crt_screen_off" />
-
-        <ListPreference
             android:key="listview_animation"
             android:dialogTitle="@string/listview_animation_title"
             android:title="@string/listview_animation_title"
@@ -51,6 +43,14 @@
             android:entries="@array/listview_interpolator_entries"
             android:entryValues="@array/listview_interpolator_values"
             android:defaultValue="0" />
+
+        <ListPreference
+            android:key="system_power_crt_mode"
+            android:dialogTitle="@string/system_power_crt_mode_dialog_title"
+            android:title="@string/system_power_crt_mode_title"
+            android:entries="@array/entries_system_power_crt_mode"
+            android:entryValues="@array/values_system_power_crt_mode"
+            android:dependency="system_power_crt_screen_off" />
 
     </PreferenceCategory>
 
@@ -152,11 +152,6 @@
             android:key="halo_pause"
             android:title="@string/halo_pause_title"
             android:summary="@string/halo_pause_summary" />
-
-        <CheckBoxPreference
-            android:key="halo_show_button"
-            android:title="@string/halo_show_button"
-            android:summary="@string/halo_show_button_summary" />
 
     </PreferenceCategory>
 
