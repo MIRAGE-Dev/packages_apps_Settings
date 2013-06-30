@@ -58,7 +58,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_POWER_CRT_SCREEN_OFF = "system_power_crt_screen_off";
     private static final String KEY_LISTVIEW_ANIMATION = "listview_animation";
     private static final String KEY_LISTVIEW_INTERPOLATOR = "listview_interpolator";
-    private static final String KEY_HALO_ENABLED = "halo_enabled"
+    private static final String KEY_HALO_ENABLED = "halo_enabled";
     private static final String KEY_HALO_STATE = "halo_state";
     private static final String KEY_HALO_HIDE = "halo_hide";
     private static final String KEY_HALO_REVERSED = "halo_reversed";
@@ -137,7 +137,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
         mListViewAnimation = (ListPreference) findPreference(KEY_LISTVIEW_ANIMATION);
         int listviewanimation = Settings.System.getInt(getActivity().getContentResolver(),
-                Settings.System.LISTVIEW_ANIMATION, 1);
+                Settings.System.LISTVIEW_ANIMATION, 0);
         mListViewAnimation.setValue(String.valueOf(listviewanimation));
         mListViewAnimation.setSummary(mListViewAnimation.getEntry());
         mListViewAnimation.setOnPreferenceChangeListener(this);
