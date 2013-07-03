@@ -1515,6 +1515,9 @@
             android:theme="@style/CryptKeeperBlankTheme"
         />
 
+        <!-- Mirage extra -->
+        <activity android:name=".mirage.Halo" />
+
         <!-- extra activities start -->
         <activity android:name=".slim.InterfaceSettings" />
         <activity android:name=".slim.PerformanceSettings" />

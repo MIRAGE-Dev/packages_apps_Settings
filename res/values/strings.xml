@@ -6023,6 +6023,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="statusbar_quick_peek_summary">Peek at statusbar by swiping from top edge of screen</string>
 
     <!-- HALO -->
+    <string name="halo_settings_title">HALO Settings</string>
     <string name="halo_options_title">HALO</string>
     <string name="halo_enabled_title">Enable HALO</string>
     <string name="halo_enabled_summary">If checked enable HALO feature (floating window on recent apps would not be affected)</string>
@@ -6036,6 +6037,14 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="halo_state_white">White list</string>
     <string name="halo_pause_title">HALO pause active app</string>
     <string name="halo_pause_summary">When opening an app with HALO the underlying app will get paused (enabled by default on low memory devices)</string>
+
+    <string name="halo_colors_title">Custom colors</string>
+    <string name="halo_colors_summary">Enable custom colors for HALO instead of the default theme colors</string>
+    <string name="halo_circle_color_title">Circle color</string>
+    <string name="halo_bubble_color_title">Speech bubble color</string>
+    <string name="halo_bubble_text_color_title">Speech bubble text color</string>
+    <string name="halo_effect_color_title">Effect color</string>
+    <string name="halo_effect_color_summary">Requires reboot</string>
 
     <!-- ListView animation -->
     <string name="listview_animation_title">ListView Animation</string>
@@ -6060,7 +6069,6 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="listview_overshoot_interpolator">overshoot_interpolator</string>
     <string name="listview_anticipate_overshoot_interpolator">anticipate_overshoot_interpolator</string>
     <string name="listview_bounce_interpolator">bounce_interpolator</string>
-
 
     <!-- Privacy Guard -->
     <string name="privacy_guard_switch_label">Enable Privacy Guard</string>
