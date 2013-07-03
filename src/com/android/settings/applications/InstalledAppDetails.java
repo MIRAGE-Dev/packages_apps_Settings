@@ -497,7 +497,6 @@ public class InstalledAppDetails extends Fragment
         mNotificationSwitch = (CompoundButton) view.findViewById(R.id.notification_switch);
         mHaloState = (CompoundButton) view.findViewById(R.id.halo_state);
         mHaloState.setText((mHaloPolicyIsBlack ? R.string.app_halo_label_black : R.string.app_halo_label_white));
-
         mPrivacyGuardSwitch = (CompoundButton) view.findViewById(R.id.privacy_guard_switch);
 
         return view;
@@ -1332,6 +1331,11 @@ public class InstalledAppDetails extends Fragment
         }
     }
 
+    private void setPrivacyGuard(boolean enabled) {
+        String packageName = mAppEntry.info.packageName;
+        mPm.setPrivacyGuardSetting(packageName, enabled);
+    }
+
     private void setHaloState(boolean state) {
         try {
             mNotificationManager.setHaloStatus(mAppEntry.info.packageName, state);
@@ -1339,12 +1343,6 @@ public class InstalledAppDetails extends Fragment
             mHaloState.setChecked(!state); // revert
         }
     }
-
-    private void setPrivacyGuard(boolean enabled) {
-        String packageName = mAppEntry.info.packageName;
-        mPm.setPrivacyGuardSetting(packageName, enabled);
-    }
-
     private int getPremiumSmsPermission(String packageName) {
         try {
             if (mSmsManager != null) {
@@ -1441,7 +1439,8 @@ public class InstalledAppDetails extends Fragment
                 showDialogInner(DLG_DISABLE_NOTIFICATIONS, 0);
             } else {
                 setNotificationsEnabled(true);
-            } else if (buttonView == mHaloState) {
+            }
+        } else if (buttonView == mHaloState) {
                 setHaloState(isChecked);
         } else if (buttonView == mPrivacyGuardSwitch) {
             if (isChecked) {
@@ -1450,6 +1449,5 @@ public class InstalledAppDetails extends Fragment
                 setPrivacyGuard(false);
             }
         }
-    }
+     }
 }
-

@@ -16,7 +16,6 @@
 
 package com.android.settings.slim;
 
-import android.app.ActivityManager;
 import android.app.ActivityManagerNative;
 import android.content.ContentResolver;
 import android.content.Context;
@@ -96,9 +95,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.display_settings_rom);
 
         PreferenceScreen prefSet = getPreferenceScreen();
-
-        mNotificationManager = INotificationManager.Stub.asInterface(
-        ServiceManager.getService(Context.NOTIFICATION_SERVICE));
 
         mListViewAnimation = (ListPreference) findPreference(KEY_LISTVIEW_ANIMATION);
         int listviewanimation = Settings.System.getInt(getActivity().getContentResolver(),

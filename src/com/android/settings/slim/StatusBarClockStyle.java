@@ -269,9 +269,9 @@ public class StatusBarClockStyle extends SettingsPreferenceFragment
                     mStatusBarClock.isChecked() ? 1 : 0);
             return true;
         } else if (preference == mStatusBarSecond) {
-            value = mStatusBarSecond.isChecked();
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
-                    Settings.System.CLOCK_USE_SECOND, value ? 1 : 0);
+                    Settings.System.CLOCK_USE_SECOND,
+                    mStatusBarSecond.isChecked() ? 1 : 0);
             return true;
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
