@@ -64,6 +64,7 @@ public class Halo extends SettingsPreferenceFragment implements
     private ColorPickerPreference mHaloEffectColor;
     private ColorPickerPreference mHaloBubbleColor;
     private ColorPickerPreference mHaloBubbleTextColor;
+    private Preference mReboot;
 
     private INotificationManager mNotificationManager;
 
@@ -115,6 +116,8 @@ public class Halo extends SettingsPreferenceFragment implements
 
         mHaloBubbleTextColor = (ColorPickerPreference) findPreference(PREF_HALO_BUBBLE_TEXT_COLOR);
         mHaloBubbleTextColor.setOnPreferenceChangeListener(this);
+
+        mReboot = findPreference("reboot");
 
     }
 
@@ -188,6 +191,11 @@ public class Halo extends SettingsPreferenceFragment implements
             int intHex = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.HALO_BUBBLE_TEXT_COLOR, intHex);
+            return true;
+        } else if (preference == reboot) {
+            PowerManager pm = (PowerManager) getActivity()
+                    .getSystemService(Context.POWER_SERVICE);
+            pm.reboot("Rebooting...");
             return true;
         }
         return false;
