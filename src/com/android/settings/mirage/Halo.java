@@ -28,6 +28,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.RemoteException;
 import android.os.ServiceManager;
+import android.os.PowerManager;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
@@ -53,6 +54,7 @@ public class Halo extends SettingsPreferenceFragment implements
     private static final String PREF_HALO_EFFECT_COLOR = "halo_effect_color";
     private static final String PREF_HALO_BUBBLE_COLOR = "halo_bubble_color";
     private static final String PREF_HALO_BUBBLE_TEXT_COLOR = "halo_bubble_text_color";
+    private static final String PREF_REBOOT = "reboot";
 
     private CheckBoxPreference mHaloEnabled;
     private ListPreference mHaloState;
@@ -117,7 +119,8 @@ public class Halo extends SettingsPreferenceFragment implements
         mHaloBubbleTextColor = (ColorPickerPreference) findPreference(PREF_HALO_BUBBLE_TEXT_COLOR);
         mHaloBubbleTextColor.setOnPreferenceChangeListener(this);
 
-        mReboot = findPreference("reboot");
+        mReboot = (Preference) findPreference(PREF_REBOOT);
+        mReboot.setOnPreferenceChangeListener(this);
 
     }
 
@@ -192,7 +195,7 @@ public class Halo extends SettingsPreferenceFragment implements
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.HALO_BUBBLE_TEXT_COLOR, intHex);
             return true;
-        } else if (preference == reboot) {
+        } else if (preference == mReboot) {
             PowerManager pm = (PowerManager) getActivity()
                     .getSystemService(Context.POWER_SERVICE);
             pm.reboot("Rebooting...");
