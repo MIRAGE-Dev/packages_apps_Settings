@@ -1824,7 +1824,6 @@
     <string name="user_picture_title">ID foto</string>
     <string name="cell_broadcast_settings">Cell broadcast</string>
     <string name="cell_broadcast_settings_summary">Seleziona i tipi di avvisi di emergenza da visualizzare.</string>
-    <string name="slim_center_title">SlimCenter</string>
     <string name="quiet_hours_title">Ore di silenzio</string>
     <string name="quiet_hours_summary">Configura gli orari in cui il dispositivo dovrebbe essere in modalità silenziosa</string>
     <string name="quiet_hours_note_title">Nota</string>
@@ -1874,7 +1873,7 @@
     <string name="preview_version_title">Versione</string>
     <string name="preview_country_title">Paese</string>
     <string name="preview_carrier_title">Operatore</string>
-    <string name="header_category_rom_settings">IMPOSTAZIONI AVANZATE SLIM</string>
+    <string name="header_category_rom_settings">IMPOSTAZIONI MIRAGE</string>
     <string name="header_category_rom_system_settings">IMPOSTAZIONI DI SISTEMA AVANZATE</string>
     <string name="ok">OK</string>
     <string name="interface_settings_title">Interfaccia</string>
@@ -2170,7 +2169,7 @@
     <string name="low_battery_warning_policy_notif">Solo notifica</string>
     <string name="low_battery_warning_policy_sound">Solo suono</string>
     <string name="low_battery_warning_policy_disabled">Disattivata</string>
-    <string name="trds_settings_title">The Real Dark Slim</string>
+    <string name="trds_settings_title">Dark MIRAGE</string>
     <string name="dpi">DPI</string>
     <string name="lcd_density_title">Densità LCD</string>
     <string name="lcd_density_summary">sconosciuto</string>
@@ -2521,7 +2520,7 @@ due per inserire ulteriori punti di controllo. \'Rimuovi\' cancella la riga sele
     <string name="keyboard_rotation_timeout_title">Timeout della rotazione automatica</string>
     <string name="keyboard_rotation_timeout_summary">Disabilita il sensore della rotazione automatica <xliff:g id="rotate_timeout">%1$s</xliff:g> secondi dopo che la tastiera è stata nascosta</string>
     <string name="keyboard_rotation_dialog">Nota: Questa caratteristica forza l\'auto-rotazione per attivare temporaneamente mentre la tastiera è fuori.        Essa non ha effetto quando la rotazione automatica è già abilitato.</string>
-    <string name="mod_version">Versione Slim</string>
+    <string name="mod_version">Versione MIRAGE</string>
     <string name="mod_version_default">Sconosciuto</string>
     <string name="development_tools_title">Avviare gli strumenti di</string>
     <string name="adb_over_network">ADB attraverso la rete</string>
@@ -2985,8 +2984,8 @@ due per inserire ulteriori punti di controllo. \'Rimuovi\' cancella la riga sele
     <string name="sound_lock_volume_keys_summary">Previene accidentali uscite dalla modalità silenziosa premendo i tasti del volume</string>
     <string name="auto_hide_statusbar">Nascondi automaticamente la barra di stato</string>
     <string name="auto_hide_statusbar_summary">La Barra di stato si nasconde quando non ci sono notifiche</string>
-    <string name="pie_control_title">SlimPIE</string>
-    <string name="pie_control_dialog_title">SlimPIE</string>
+    <string name="pie_control_title">MIRAGE PIE</string>
+    <string name="pie_control_dialog_title">MIRAGE PIE</string>
     <string name="pie_control_always">Visualizza sempre</string>
     <string name="pie_control_expanded">Solo in modalità desktop esteso</string>
     <string name="pie_control_disabled">Disattivata</string>

@@ -1818,7 +1818,6 @@
     <string name="user_picture_title">ID de foto</string>
     <string name="cell_broadcast_settings">Difusiones móviles</string>
     <string name="cell_broadcast_settings_summary">Selecciona los tipos de alertas de emergencia que quieres ver.</string>
-    <string name="slim_center_title">SlimCenter</string>
     <string name="quiet_hours_title">Horas silenciosas</string>
     <string name="quiet_hours_summary">Configurar las horas en las que el dispositivo estará silenciado</string>
     <string name="quiet_hours_note_title">Nota</string>
@@ -1868,7 +1867,7 @@
     <string name="preview_version_title">Versión</string>
     <string name="preview_country_title">País</string>
     <string name="preview_carrier_title">Operador</string>
-    <string name="header_category_rom_settings">CONFIGURACIÓN AVANZADA DE SLIM</string>
+    <string name="header_category_rom_settings">CONFIGURACIÓN DE ESPEJISMO</string>
     <string name="header_category_rom_system_settings">CONFIGURACIÓN AVANZADA DEL SISTEMA</string>
     <string name="ok">Aceptar</string>
     <string name="interface_settings_title">Interfaz</string>
@@ -2164,7 +2163,7 @@
     <string name="low_battery_warning_policy_notif">Notificación sólamente</string>
     <string name="low_battery_warning_policy_sound">Sólo sonido</string>
     <string name="low_battery_warning_policy_disabled">Inhabilitada</string>
-    <string name="trds_settings_title">La verdadera oscuridad Slim</string>
+    <string name="trds_settings_title">La verdadera oscuridad ESPEJISMO</string>
     <string name="dpi">DPI</string>
     <string name="lcd_density_title">Densidad de LCD</string>
     <string name="lcd_density_summary">desconocido</string>
@@ -2484,7 +2483,7 @@
     <string name="keyboard_rotation_timeout_title">Tiempo de espera de auto-rotación</string>
     <string name="keyboard_rotation_timeout_summary">Desactivar el sensor de auto-rotación <xliff:g id="rotate_timeout"> %1$s </xliff:g> segundos después ocultar el teclado</string>
     <string name="keyboard_rotation_dialog">Nota: Esta opción establece la autorotación activa temporalmente mientras el teclado está abierto.    No tiene efecto alguno cuando ya está habilitada la rotación automática.</string>
-    <string name="mod_version">Versión de Slim</string>
+    <string name="mod_version">Versión de ESPEJISMO</string>
     <string name="mod_version_default">Desconocido</string>
     <string name="development_tools_title">Herramientas del lanzador</string>
     <string name="adb_over_network">ADB en red</string>

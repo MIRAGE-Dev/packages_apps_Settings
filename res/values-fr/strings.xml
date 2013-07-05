@@ -1824,7 +1824,6 @@
     <string name="user_picture_title">ID de photo</string>
     <string name="cell_broadcast_settings">Diffusions cellulaires</string>
     <string name="cell_broadcast_settings_summary">Sélectionnez les types d\'alertes d\'urgence à afficher.</string>
-    <string name="slim_center_title">SlimCenter</string>
     <string name="quiet_hours_title">Période silencieuse</string>
     <string name="quiet_hours_summary">Configurer les heures où l\'appareil doit être silencieux</string>
     <string name="quiet_hours_note_title">Remarque</string>
@@ -1877,7 +1876,7 @@
     <string name="preview_version_title">Version</string>
     <string name="preview_country_title">Pays</string>
     <string name="preview_carrier_title">Opérateur</string>
-    <string name="header_category_rom_settings">PARAMÈTRES SLIM AVANCÉS</string>
+    <string name="header_category_rom_settings">PARAMÈTRES MIRAGE</string>
     <string name="header_category_rom_system_settings">PARAMÈTRES SYSTÈME AVANCÉS</string>
     <string name="ok">Ok</string>
     <string name="interface_settings_title">Interface</string>
@@ -2190,7 +2189,7 @@
     <string name="low_battery_warning_policy_notif">Notification uniquement</string>
     <string name="low_battery_warning_policy_sound">Son seulement</string>
     <string name="low_battery_warning_policy_disabled">Désactivé</string>
-    <string name="trds_settings_title">The Real Dark Slim</string>
+    <string name="trds_settings_title">Dark MIRAGE</string>
     <string name="dpi">DPI</string>
     <string name="lcd_density_title">Densité de l\'écran LCD</string>
     <string name="lcd_density_summary">inconnu</string>
@@ -2544,7 +2543,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="keyboard_rotation_dialog">Remarque : Cette fonctionnalité force l\'auto-rotation temporairement lorsque le clavier est apparent sur l\'écran.        Il n\'a aucun effet lorsque l\'auto-rotation est déjà activée.</string>
     <string name="show_enter_key_title">Afficher la touche entrée</string>
     <string name="show_enter_key_summary">Forcer l\'affichage de la touche entrée sur le clavier à la place de la touche du smiley</string>
-    <string name="mod_version">Version Slim</string>
+    <string name="mod_version">Version MIRAGE</string>
     <string name="mod_version_default">Inconnu</string>
     <string name="development_tools_title">Outils de lancement</string>
     <string name="adb_over_network">ADB sur TCP/IP</string>
@@ -3008,8 +3007,8 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="sound_lock_volume_keys_summary">Empêcher l\'activation accidentelle du mode silencieux en appuyant sur les touches de volume</string>
     <string name="auto_hide_statusbar">Masquer automatiquement la barre d\'état</string>
     <string name="auto_hide_statusbar_summary">La barre d\'état est cachée automatiquement quand il n\'y a pas de notifications</string>
-    <string name="pie_control_title">PIE Slim</string>
-    <string name="pie_control_dialog_title">PIE Slim</string>
+    <string name="pie_control_title">PIE MIRAGE</string>
+    <string name="pie_control_dialog_title">PIE MIRAGE</string>
     <string name="pie_control_always">Toujours affiché</string>
     <string name="pie_control_expanded">Seulement sur le mode bureau étendu</string>
     <string name="pie_control_disabled">Désactivé</string>

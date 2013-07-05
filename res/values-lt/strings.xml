@@ -1831,7 +1831,6 @@
     <string name="user_picture_title">Nuotraukos ID</string>
     <string name="cell_broadcast_settings">Tinklo transliacijos</string>
     <string name="cell_broadcast_settings_summary">Pasirinkite rodomų nepaprastųjų įspėjimų tipus.</string>
-    <string name="slim_center_title">Slim centras</string>
     <string name="quiet_hours_title">Tyliosios valandos</string>
     <string name="quiet_hours_summary">Nustatykite valandas, kurių metu įrenginys bus tylus</string>
     <string name="quiet_hours_note_title">Pastaba</string>
@@ -1881,7 +1880,7 @@
     <string name="preview_version_title">Versija</string>
     <string name="preview_country_title">Šalis</string>
     <string name="preview_carrier_title">Operatorius</string>
-    <string name="header_category_rom_settings">SUDĖTINGESNI SLIM NUSTATYMAI</string>
+    <string name="header_category_rom_settings">MIRAŽAS NUSTATYMAI</string>
     <string name="header_category_rom_system_settings">SUDĖTINGESNI SISTEMOS NUSTATYMAI</string>
     <string name="ok">Gerai</string>
     <string name="interface_settings_title">Sąsaja</string>
@@ -2174,7 +2173,7 @@
     <string name="low_battery_warning_policy_notif">Tik įspėjimas</string>
     <string name="low_battery_warning_policy_sound">Tik garsas</string>
     <string name="low_battery_warning_policy_disabled">Neleidžiama</string>
-    <string name="trds_settings_title">Tikrasis Dark Slim</string>
+    <string name="trds_settings_title">Dark MIRAŽAS</string>
     <string name="dpi">DPI</string>
     <string name="lcd_density_title">Ekrano tankis</string>
     <string name="lcd_density_summary">nežinomas</string>
@@ -2492,7 +2491,7 @@
     <string name="keyboard_rotation_timeout_title">Pasukimo išsijungimo laikas</string>
     <string name="keyboard_rotation_timeout_summary">Išjungia sukimosi jutiklį, kai klaviatūra išjungta <xliff:g id="rotate_timeout">%1$s</xliff:g> sekundžių</string>
     <string name="keyboard_rotation_dialog">Pastaba: Ši funkcija laikinai įjungia automatinį pasisukimą kai rodoma klaviatūra. Jei automatinis pasisukimas jau yra įgalintas, jokio poveikio nepajusite.</string>
-    <string name="mod_version">Slim versija</string>
+    <string name="mod_version">MIRAŽAS versija</string>
     <string name="mod_version_default">Nežinomas</string>
     <string name="development_tools_title">Paleisti įrankius</string>
     <string name="adb_over_network">ADB vietoje tinklo</string>
