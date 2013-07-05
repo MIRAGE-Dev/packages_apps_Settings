@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012 MIRAGE
+ * Copyright (C) 2013 MIRAGE
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -54,7 +54,6 @@ public class Halo extends SettingsPreferenceFragment implements
     private static final String PREF_HALO_EFFECT_COLOR = "halo_effect_color";
     private static final String PREF_HALO_BUBBLE_COLOR = "halo_bubble_color";
     private static final String PREF_HALO_BUBBLE_TEXT_COLOR = "halo_bubble_text_color";
-    private static final String PREF_REBOOT = "reboot";
 
     private CheckBoxPreference mHaloEnabled;
     private ListPreference mHaloState;
@@ -66,7 +65,6 @@ public class Halo extends SettingsPreferenceFragment implements
     private ColorPickerPreference mHaloEffectColor;
     private ColorPickerPreference mHaloBubbleColor;
     private ColorPickerPreference mHaloBubbleTextColor;
-    private Preference mReboot;
 
     private INotificationManager mNotificationManager;
 
@@ -118,10 +116,6 @@ public class Halo extends SettingsPreferenceFragment implements
 
         mHaloBubbleTextColor = (ColorPickerPreference) findPreference(PREF_HALO_BUBBLE_TEXT_COLOR);
         mHaloBubbleTextColor.setOnPreferenceChangeListener(this);
-
-        mReboot = (Preference) findPreference(PREF_REBOOT);
-        mReboot.setOnPreferenceChangeListener(this);
-
     }
 
     private boolean isHaloPolicyBlack() {
@@ -194,11 +188,6 @@ public class Halo extends SettingsPreferenceFragment implements
             int intHex = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.HALO_BUBBLE_TEXT_COLOR, intHex);
-            return true;
-        } else if (preference == mReboot) {
-            PowerManager pm = (PowerManager) getActivity()
-                    .getSystemService(Context.POWER_SERVICE);
-            pm.reboot("Rebooting...");
             return true;
         }
         return false;
