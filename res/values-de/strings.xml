@@ -55,7 +55,7 @@
     <string name="small_font">Klein</string>
     <string name="medium_font">Mittel</string>
     <string name="large_font">Groß</string>
-    <string name="font_size_preview_text">Lorem ipsum SlimRom sit.</string>
+    <string name="font_size_preview_text">Lorem ipsum MIRAGE sit.</string>
     <string name="font_size_save">OK</string>
     <string name="sdcard_setting" product="nosdcard">SD-Karte</string>
     <string name="sdcard_setting" product="default">SD-Karte</string>
@@ -1824,7 +1824,6 @@
     <string name="user_picture_title">Foto-ID</string>
     <string name="cell_broadcast_settings">Cell Broadcasts</string>
     <string name="cell_broadcast_settings_summary">Wählen Sie aus, welche Notfallbenachrichtigungen angezeigt werden sollen.</string>
-    <string name="slim_center_title">SlimCenter</string>
     <string name="quiet_hours_title">Ruhige Stunden</string>
     <string name="quiet_hours_summary">Benachrichtigungen in einem vorgegebenen Zeitraum ändern</string>
     <string name="quiet_hours_note_title">Hinweis</string>
@@ -1874,7 +1873,7 @@
     <string name="preview_version_title">Version</string>
     <string name="preview_country_title">Land</string>
     <string name="preview_carrier_title">Netzbetreiber</string>
-    <string name="header_category_rom_settings">ERWEITERTE SLIM EINSTELLUNGEN</string>
+    <string name="header_category_rom_settings">MIRAGE EINSTELLUNGEN</string>
     <string name="header_category_rom_system_settings">ERWEITERTE SYSTEMEINSTELLUNGEN</string>
     <string name="ok">OK</string>
     <string name="interface_settings_title">Benutzeroberfläche</string>
@@ -2170,7 +2169,7 @@
     <string name="low_battery_warning_policy_notif">Nur Benachrichtigung</string>
     <string name="low_battery_warning_policy_sound">Nur Sound</string>
     <string name="low_battery_warning_policy_disabled">Deaktiviert</string>
-    <string name="trds_settings_title">The Real Dark Slim</string>
+    <string name="trds_settings_title">Dunkle MIRAGE</string>
     <string name="dpi">DPI</string>
     <string name="lcd_density_title">LCD Pixeldichte</string>
     <string name="lcd_density_summary">unbekannt</string>
@@ -2508,7 +2507,7 @@ Zusätzliche Optionen können durch einen langen Druck auf die Zeile angezeigt w
     <string name="keyboard_rotation_timeout_title">Timeout für Auto-Rotation</string>
     <string name="keyboard_rotation_timeout_summary">Deaktiviert Auto-Rotation für <xliff:g id="rotate_timeout">%1$s</xliff:g> Sekunden nachdem die Tastatur ausgeblendet wurde</string>
     <string name="keyboard_rotation_dialog">Hinweis: Diese Funktion erzwingt kurzzeitig die Verwendung von Auto-Rotation während die Tastatur eingeblendet ist. Hat keine Auswirkung, wenn \"Display automatisch drehen\" bereits aktiviert ist.</string>
-    <string name="mod_version">Slim Version</string>
+    <string name="mod_version">MIRAGE Version</string>
     <string name="mod_version_default">Unbekannt</string>
     <string name="development_tools_title">Entwickler-Werkzeuge</string>
     <string name="adb_over_network">ADB über Netzwerk</string>
@@ -2972,8 +2971,8 @@ Zusätzliche Optionen können durch einen langen Druck auf die Zeile angezeigt w
     <string name="sound_lock_volume_keys_summary">Verhindert, dass der Silent-Modus durch versehentliches Drücken der Lautstärketasten beendet wird</string>
     <string name="auto_hide_statusbar">Statusleiste automatisch verstecken</string>
     <string name="auto_hide_statusbar_summary">Die Statusleiste wird versteckt wenn keine Benachrichtigungen vorhanden sind</string>
-    <string name="pie_control_title">SlimPIE</string>
-    <string name="pie_control_dialog_title">SlimPIE</string>
+    <string name="pie_control_title">MIRAGE PIE</string>
+    <string name="pie_control_dialog_title">MIRAGE PIE</string>
     <string name="pie_control_always">Immer anzeigen</string>
     <string name="pie_control_expanded">Nur im \"erweiterten Desktop\" Modus</string>
     <string name="pie_control_disabled">Deaktiviert</string>

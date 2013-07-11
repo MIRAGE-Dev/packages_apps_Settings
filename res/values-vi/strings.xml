@@ -1824,7 +1824,7 @@
     <string name="user_picture_title">ID ảnh</string>
     <string name="cell_broadcast_settings">Phát sóng trên di động</string>
     <string name="cell_broadcast_settings_summary">Chọn các loại cảnh báo khẩn cấp để hiển thị.</string>
-    <string name="slim_center_title">Trung tâm Slim</string>
+    <string name="slim_center_title">Trung tâm MIRAGE</string>
     <string name="quiet_hours_title">Giờ yên tĩnh</string>
     <string name="quiet_hours_summary">Cấu hình khoảng thời gian mà thiết bị nên im lặng</string>
     <string name="quiet_hours_note_title">Ghi chú</string>
@@ -1874,7 +1874,7 @@
     <string name="preview_version_title">Phiên bản</string>
     <string name="preview_country_title">Quốc gia</string>
     <string name="preview_carrier_title">Nhà mạng</string>
-    <string name="header_category_rom_settings">Cài đặt SLIM nâng cao</string>
+    <string name="header_category_rom_settings">Cài đặt MIRAGE</string>
     <string name="header_category_rom_system_settings">Cài đặt hệ thống nâng cao</string>
     <string name="ok">OK</string>
     <string name="interface_settings_title">Giao diện</string>
@@ -2500,7 +2500,7 @@
     <string name="keyboard_rotation_timeout_title">Thời gian tự động xoay</string>
     <string name="keyboard_rotation_timeout_summary">Tắt cảm biến xoay        <xliff:g id="rotate_timeout">%1$s</xliff:g> giây sau khi bàn phím ẩn đi</string>
     <string name="keyboard_rotation_dialog">Lưu ý: Tính năng này tự động xoay khi bàn phím hiện lên, nó không ảnh hưởng nếu tự động xoay đã được bật.</string>
-    <string name="mod_version">Phiên bản Slim</string>
+    <string name="mod_version">Phiên bản MIRAGE</string>
     <string name="mod_version_default">Không xác định</string>
     <string name="development_tools_title">Khởi động công cụ</string>
     <string name="adb_over_network">ADB qua mạng</string>
@@ -2964,8 +2964,8 @@
     <string name="sound_lock_volume_keys_summary">Tránh thoát ra khỏi chế độ im lặng khi bạn vô tình nhấn các phím âm lượng khi điện thoại đã khóa</string>
     <string name="auto_hide_statusbar">Tự động ẩn Thanh trạng thái</string>
     <string name="auto_hide_statusbar_summary">Thanh trạng thái tự ẩn đi khi nó không chứa bất kỳ thông báo nào</string>
-    <string name="pie_control_title">Bánh Slim</string>
-    <string name="pie_control_dialog_title">Bánh Slim</string>
+    <string name="pie_control_title">MIRAGE PIE</string>
+    <string name="pie_control_dialog_title">MIRAGE PIE</string>
     <string name="pie_control_always">Luôn hiển thị</string>
     <string name="pie_control_expanded">Chi khi Màn hình đã được mở rộng</string>
     <string name="pie_control_disabled">Đã bị vô hiệu hóa</string>

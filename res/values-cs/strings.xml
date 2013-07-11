@@ -1824,7 +1824,6 @@
     <string name="user_picture_title">ID fotografie</string>
     <string name="cell_broadcast_settings">Hromadné zasílání zpráv v rámci buňky</string>
     <string name="cell_broadcast_settings_summary">Vyberte typy mimořádných upozornění, která chcete zobrazovat.</string>
-    <string name="slim_center_title">SlimCenter</string>
     <string name="quiet_hours_title">Tichý režim</string>
     <string name="quiet_hours_summary">Nastavit hodiny, kdy má být zařízení v tichém režimu</string>
     <string name="quiet_hours_note_title">Poznámka</string>
@@ -1874,7 +1873,7 @@
     <string name="preview_version_title">Verze</string>
     <string name="preview_country_title">Země</string>
     <string name="preview_carrier_title">Operátor</string>
-    <string name="header_category_rom_settings">POKROČILÁ SLIM NASTAVENÍ</string>
+    <string name="header_category_rom_settings">MIRAGE NASTAVENÍ</string>
     <string name="header_category_rom_system_settings">POKROČILÁ SYSTÉMOVÁ NASTAVENÍ</string>
     <string name="ok">OK</string>
     <string name="interface_settings_title">Vzhled</string>
@@ -2170,7 +2169,7 @@
     <string name="low_battery_warning_policy_notif">Pouze oznámením</string>
     <string name="low_battery_warning_policy_sound">Pouze zvukem</string>
     <string name="low_battery_warning_policy_disabled">Zakázané</string>
-    <string name="trds_settings_title">The Real Dark Slim</string>
+    <string name="trds_settings_title">Tmavě MIRAGE</string>
     <string name="dpi">DPI</string>
     <string name="lcd_density_title">Hustota rozlišení</string>
     <string name="lcd_density_summary">neznámý</string>
@@ -2500,7 +2499,7 @@
     <string name="keyboard_rotation_timeout_title">Časový limit autorotace</string>
     <string name="keyboard_rotation_timeout_summary">Zakáže automatické otáčení <xliff:g id="rotate_timeout">%1$s</xliff:g> sekund po skrytí klávesnice</string>
     <string name="keyboard_rotation_dialog">Poznámka: Tato funkce dočasně povolí automatické otáčení obrazovky při zobrazené klávesnici. Při povoleném automatickém otáčení není volba aktivní.</string>
-    <string name="mod_version">Slim verze</string>
+    <string name="mod_version">Tmavě MIRAGE</string>
     <string name="mod_version_default">Neznámé</string>
     <string name="development_tools_title">Nástroje pro vývojáře</string>
     <string name="adb_over_network">ADB přes síť</string>
@@ -2964,8 +2963,6 @@
     <string name="sound_lock_volume_keys_summary">Zabránit náhodnému zrušení tichého režimu zmáčknutím tlačítek hlasitosti</string>
     <string name="auto_hide_statusbar">Automaticky skrýt stavový řádek</string>
     <string name="auto_hide_statusbar_summary">Stavový řádek se skryje, když nemáte žádná upozornění</string>
-    <string name="pie_control_title">SlimPIE</string>
-    <string name="pie_control_dialog_title">SlimPIE</string>
     <string name="pie_control_always">Zobrazit vždy</string>
     <string name="pie_control_expanded">Pouze v režimu rozšířené plochy</string>
     <string name="pie_control_disabled">Zakázané</string>
@@ -3012,7 +3009,7 @@
     <string name="pie_disable_statusbar_info_title">Skrýt informace stavového řádku</string>
     <string name="pie_disable_statusbar_info_summary">Skrýt opakující se infromace stavového řádku</string>
     <string name="pie_show_background_title">Zobrazit pozadí</string>
-    <string name="pie_show_background_summary">Povolit pozadí pro SlimPIE</string>
+    <string name="pie_show_background_summary">Povolit pozadí pro MIRAGE-PIE</string>
     <string name="menu_pie_style_reset">Obnovit styl</string>
     <string name="menu_pie_button_style_reset">Obnovit styl tlačítek</string>
     <string name="menu_pie_button_reset">Obnovit tlačítka</string>
@@ -3020,7 +3017,7 @@
     <string name="pie_qty_summary">Změna vyresetuje vaše aktuální tlačítka</string>
     <string name="pie_action_title">%1$s. tlačítko - Funkce a ikona</string>
     <string name="pie_longpress_title">%1$s. tlačítko - Funkce při podržení</string>
-    <string name="pie_enable_long">Povolit dlouhý stitsk pro SlimPIE</string>
+    <string name="pie_enable_long">Povolit dlouhý stitsk pro MIRAGE-PIE</string>
     <string name="pie_button">Tlačítka</string>
     <string name="pie_button_cat">Tlačítka</string>
     <string name="pie_action_custom_app">Vlastní aplikace</string>
