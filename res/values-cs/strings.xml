@@ -2499,7 +2499,7 @@
     <string name="keyboard_rotation_timeout_title">Časový limit autorotace</string>
     <string name="keyboard_rotation_timeout_summary">Zakáže automatické otáčení <xliff:g id="rotate_timeout">%1$s</xliff:g> sekund po skrytí klávesnice</string>
     <string name="keyboard_rotation_dialog">Poznámka: Tato funkce dočasně povolí automatické otáčení obrazovky při zobrazené klávesnici. Při povoleném automatickém otáčení není volba aktivní.</string>
-    <string name="mod_version">Tmavě MIRAGE</string>
+    <string name="mod_version">MIRAGE verze</string>
     <string name="mod_version_default">Neznámé</string>
     <string name="development_tools_title">Nástroje pro vývojáře</string>
     <string name="adb_over_network">ADB přes síť</string>
