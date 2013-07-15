@@ -70,8 +70,8 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
 
         mNavBarMenuDisplay = (ListPreference) findPreference(PREF_NAVBAR_MENU_DISPLAY);
         mNavBarMenuDisplay.setOnPreferenceChangeListener(this);
-        mNavBarMenuDisplay.setValue(Settings.System.getInt(mContentRes,
-                Settings.System.MENU_VISIBILITY,0) + "");
+        mNavBarMenuDisplay.setValue(Settings.System.getInt(Settings.System.getInt(getActivity()
+                .getContentResolver(), Settings.System.MENU_VISIBILITY, 0) + "");
 
         if (Integer.parseInt(menuDisplayLocation.getValue()) == 4) {
             mNavBarMenuDisplay.setEnabled(false);
