@@ -70,13 +70,15 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
 
         mNavBarMenuDisplay = (ListPreference) findPreference(PREF_NAVBAR_MENU_DISPLAY);
         mNavBarMenuDisplay.setOnPreferenceChangeListener(this);
-        mNavBarMenuDisplay.setValue(Settings.System.getInt(getActivity()
-                .getContentResolver(), Settings.System.MENU_VISIBILITY,
-                0) + "");
+        mNavBarMenuDisplay.setValue(Settings.System.getInt(mContentRes,
+                Settings.System.MENU_VISIBILITY,0) + "");
+
+        if (Integer.parseInt(menuDisplayLocation.getValue()) == 4) {
+            mNavBarMenuDisplay.setEnabled(false);
+        }
 
         mGlowTimes = (ListPreference) findPreference(PREF_GLOW_TIMES);
         mGlowTimes.setOnPreferenceChangeListener(this);
-
         updateGlowTimesSummary();
 
         mButtonPreference = (PreferenceScreen) findPreference(PREF_BUTTON);
@@ -141,6 +143,7 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
         if (preference == menuDisplayLocation) {
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.MENU_LOCATION, Integer.parseInt((String) newValue));
+            mNavBarMenuDisplay.setEnabled(val < 4 ? true : false);
             return true;
         } else if (preference == mNavBarMenuDisplay) {
             Settings.System.putInt(getActivity().getContentResolver(),
