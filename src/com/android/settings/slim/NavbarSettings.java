@@ -165,22 +165,25 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
 
     private void updateGlowTimesSummary() {
         int resId;
-        String combinedTime = Settings.System.getString(getContentResolver(),
+        String combinedTime = Settings.System.getString(mContentRes,
                 Settings.System.NAVIGATION_BAR_GLOW_DURATION[1]) + "|" +
-                Settings.System.getString(getContentResolver(),
+                Settings.System.getString(mContentRes,
                         Settings.System.NAVIGATION_BAR_GLOW_DURATION[0]);
 
         String[] glowArray = getResources().getStringArray(R.array.glow_times_values);
 
         if (glowArray[0].equals(combinedTime)) {
-            resId = R.string.glow_times_superquick;
+            resId = R.string.glow_times_off;
             mGlowTimes.setValueIndex(0);
         } else if (glowArray[1].equals(combinedTime)) {
-            resId = R.string.glow_times_quick;
+            resId = R.string.glow_times_superquick;
             mGlowTimes.setValueIndex(1);
+        } else if (glowArray[2].equals(combinedTime)) {
+            resId = R.string.glow_times_quick;
+            mGlowTimes.setValueIndex(2);
         } else {
             resId = R.string.glow_times_normal;
-            mGlowTimes.setValueIndex(2);
+            mGlowTimes.setValueIndex(3);
         }
         mGlowTimes.setSummary(getResources().getString(resId));
     }
