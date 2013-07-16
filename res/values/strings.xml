@@ -6099,7 +6099,7 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="privacy_guard_manager_filter_permissions">Permission filter</string>
 
     <!-- Show Network speed -->
-    <string name="show_network_speed">Network Speed</string>
+    <string name="show_network_speed_title">Network Speed</string>
     <string name="show_network_speed_summary">Show Network Speed in statsbar</string>
     <!-- MIRAGE Extra Settings -->
     <!-- FINISH -->

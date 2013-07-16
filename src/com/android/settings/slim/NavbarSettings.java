@@ -65,12 +65,11 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
         menuDisplayLocation = (ListPreference) findPreference(PREF_MENU_UNLOCK);
         menuDisplayLocation.setOnPreferenceChangeListener(this);
         menuDisplayLocation.setValue(Settings.System.getInt(getActivity()
-                .getContentResolver(), Settings.System.MENU_LOCATION,
-                0) + "");
+                .getContentResolver(), Settings.System.MENU_LOCATION, 0) + "");
 
         mNavBarMenuDisplay = (ListPreference) findPreference(PREF_NAVBAR_MENU_DISPLAY);
         mNavBarMenuDisplay.setOnPreferenceChangeListener(this);
-        mNavBarMenuDisplay.setValue(Settings.System.getInt(Settings.System.getInt(getActivity()
+        mNavBarMenuDisplay.setValue(Settings.System.getInt(getActivity()
                 .getContentResolver(), Settings.System.MENU_VISIBILITY, 0) + "");
 
         if (Integer.parseInt(menuDisplayLocation.getValue()) == 4) {
@@ -143,7 +142,7 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
         if (preference == menuDisplayLocation) {
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.MENU_LOCATION, Integer.parseInt((String) newValue));
-            mNavBarMenuDisplay.setEnabled(val < 4 ? true : false);
+            mNavBarMenuDisplay.setEnabled(Integer.parseInt((String) newValue) < 4 ? true : false);
             return true;
         } else if (preference == mNavBarMenuDisplay) {
             Settings.System.putInt(getActivity().getContentResolver(),
@@ -168,9 +167,9 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
 
     private void updateGlowTimesSummary() {
         int resId;
-        String combinedTime = Settings.System.getString(mContentRes,
+        String combinedTime = Settings.System.getString(getContentResolver(),
                 Settings.System.NAVIGATION_BAR_GLOW_DURATION[1]) + "|" +
-                Settings.System.getString(mContentRes,
+                Settings.System.getString(getContentResolver(),
                         Settings.System.NAVIGATION_BAR_GLOW_DURATION[0]);
 
         String[] glowArray = getResources().getStringArray(R.array.glow_times_values);
