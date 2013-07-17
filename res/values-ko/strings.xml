@@ -3028,5 +3028,53 @@
     <string name="pie_action_widgets">위젯 viewpager</string>
     <string name="pie_action_power">화면 끄기</string>
     <string name="pie_action_notifications">알림</string>
+    <string name="pie_action_quicksettings">빠른설정 패널</string>
     <string name="pie_action_none">없음</string>
+
+    <!-- ListView animation -->
+    <string name="listview_animation_title">리스트뷰 애니메이션</string>
+    <string name="listview_off">끄기</string>
+    <string name="listview_wave_left">Wave (왼쪽)</string>
+    <string name="listview_wave_right">Wave (오른쪽)</string>
+    <string name="listview_alpha">Alpha</string>
+    <string name="listview_scale">Scale</string>
+    <string name="listview_stack_top">Stack (위쪽)</string>
+    <string name="listview_stack_bottom">Stack (아랫쪽)</string>
+    <string name="listview_unfold">Unfold</string>
+    <string name="listview_fold">Fold</string>
+    <string name="listview_translate_left">Translate (왼쪽)</string>
+    <string name="listview_translate_right">Translate (오른쪽)</string>
+    <string name="listview_rotate">Rotate</string>
+
+    <!-- HALO -->
+    <string name="halo_settings_title">HALO 설정</string>
+    <string name="halo_options_title">HALO</string>
+    <string name="halo_enabled_title">HALO 켜기</string>
+    <string name="halo_hide_title">액티비티 후 HALO 숨기기</string>
+    <string name="halo_reversed_title">HALO 제스쳐 전환</string>
+    <string name="halo_state_title">HALO 정책</string>
+    <string name="halo_state_black">블랙 리스트</string>
+    <string name="halo_state_white">화이트 리스트</string>
+    <string name="halo_colors_title">사용자 색상</string>
+    <string name="halo_colors_summary">사용자 색상기능은 기본 HALO테마 대신에 사용합니다</string>
+    <string name="halo_circle_color_title">Circle 색상</string>
+    <string name="halo_bubble_color_title">Speech bubble 색상</string>
+    <string name="halo_bubble_text_color_title">Speech bubble 글씨 색상</string>
+    <string name="halo_effect_color_title">효과 색상</string>
+    <string name="halo_effect_color_summary">SysUI 재시작이 필요합니다</string>
+    <string name="halo_size_title">HALO 크기</string>
+    <string name="halo_size_miniscule">매우 작게</string>
+    <string name="halo_size_small">작게</string>
+    <string name="halo_size_default">기본값</string>
+    <string name="halo_size_large">크게</string>
+    <string name="halo_size_gigantic">거대하게</string>
+    <string name="halo_size_monster">매우 거대하게</string>
+
+    <!-- Show Network speed -->
+    <string name="show_network_speed_title">네트워크 속도</string>
+    <string name="show_network_speed_summary">상태바에 네트워크 속도를 표시합니다</string>
+
+    <!-- Statusbar Quick Peek -->
+    <string name="statusbar_quick_peek_title">Quick Peek</string>
+    <string name="statusbar_quick_peek_summary">상태바가 가로모드시 숨겨졌을때 상태바쪽을 스와이프하면 상태바가 나타납니다</string>
 </resources>
