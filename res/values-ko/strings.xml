@@ -3055,13 +3055,6 @@
     <string name="halo_state_title">HALO 정책</string>
     <string name="halo_state_black">블랙 리스트</string>
     <string name="halo_state_white">화이트 리스트</string>
-    <string name="halo_colors_title">사용자 색상</string>
-    <string name="halo_colors_summary">사용자 색상기능은 기본 HALO테마 대신에 사용합니다</string>
-    <string name="halo_circle_color_title">Circle 색상</string>
-    <string name="halo_bubble_color_title">Speech bubble 색상</string>
-    <string name="halo_bubble_text_color_title">Speech bubble 글씨 색상</string>
-    <string name="halo_effect_color_title">효과 색상</string>
-    <string name="halo_effect_color_summary">SysUI 재시작이 필요합니다</string>
     <string name="halo_size_title">HALO 크기</string>
     <string name="halo_size_miniscule">매우 작게</string>
     <string name="halo_size_small">작게</string>
