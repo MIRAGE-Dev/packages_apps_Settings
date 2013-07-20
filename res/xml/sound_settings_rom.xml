@@ -68,6 +68,14 @@
         android:summary="@string/volbtn_music_controls_summary"
         android:persistent="false" />
 
+    <ListPreference
+        android:key="volume_steps"
+        android:dialogTitle="@string/volume_steps_title"
+        android:title="@string/volume_steps_title"
+        android:summary="@string/volume_steps_summary"
+        android:entries="@array/entries_volume_steps"
+        android:entryValues="@array/values_volume_steps" />
+
     <PreferenceCategory
         android:title="@string/notifications_category_title" />
 

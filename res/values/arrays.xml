@@ -2510,4 +2510,19 @@
         <item>1.6</item>
     </string-array>
 
+    <!-- MEDIA VOLUME STEPS -->
+    <string-array name="entries_volume_steps" translatable="false">
+        <item>15 (Default)</item>
+        <item>25</item>
+        <item>30</item>
+        <item>45</item>
+    </string-array>
+
+    <string-array name="values_volume_steps" translatable="false">
+        <item>15</item>
+        <item>25</item>
+        <item>30</item>
+        <item>45</item>
+    </string-array>
+
 </resources>

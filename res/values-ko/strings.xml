@@ -3103,4 +3103,7 @@
     <string name="lockgesture_settings_help_how_to_record">제스쳐 그리는 법</string>
     <string name="lockgesture_too_many_failed_confirmation_attempts_header">너무 많이 실패했습니다!</string>
     <string name="lockgesture_too_many_failed_confirmation_attempts_footer"><xliff:g id="number">%d</xliff:g> 초 후 재시도 하세요</string>
+
+    <!-- Volume Steps -->
+    <string name="volume_steps_title">미디어 볼륨 단계</string>
 </resources>

@@ -30,6 +30,7 @@ import android.os.Bundle;
 import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.os.SystemProperties;
+import android.os.PowerManager;
 import android.os.Vibrator;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
@@ -60,6 +61,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
     private static final String KEY_POWER_NOTIFICATIONS = "power_notifications";
     private static final String KEY_POWER_NOTIFICATIONS_VIBRATE = "power_notifications_vibrate";
     private static final String KEY_POWER_NOTIFICATIONS_RINGTONE = "power_notifications_ringtone";
+    private static final String VOLUME_STEPS = "volume_steps";
 
     // Request code for power notification ringtone picker
     private static final int REQUEST_CODE_POWER_NOTIFICATIONS_RINGTONE = 1;
@@ -70,6 +72,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
     private final Configuration mCurConfig = new Configuration();
 
     private ListPreference mVolumeOverlay;
+    private ListPreference mVolumeSteps;
     private CheckBoxPreference mSafeHeadsetVolume;
     private CheckBoxPreference mVolBtnMusicCtrl;
     private CheckBoxPreference mConvertSoundToVibration;
@@ -97,6 +100,13 @@ public class SoundSettings extends SettingsPreferenceFragment implements
                 VolumePanel.VOLUME_OVERLAY_EXPANDABLE);
         mVolumeOverlay.setValue(Integer.toString(volumeOverlay));
         mVolumeOverlay.setSummary(mVolumeOverlay.getEntry());
+
+        mVolumeSteps = (ListPreference) findPreference(VOLUME_STEPS);
+        mVolumeSteps.setOnPreferenceChangeListener(this);
+        int volumeSteps = Settings.System.getInt(getContentResolver(),
+                Settings.System.AUDIO_VOLUME_STEPS, 15);
+        mVolumeSteps.setValue(Integer.toString(volumeSteps));
+        mVolumeSteps.setSummary(mVolumeSteps.getEntry());
 
         mSafeHeadsetVolume = (CheckBoxPreference) findPreference(KEY_SAFE_HEADSET_VOLUME);
         mSafeHeadsetVolume.setPersistent(false);
@@ -267,6 +277,15 @@ public class SoundSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getContentResolver(),
                     Settings.System.MODE_VOLUME_OVERLAY, value);
             mVolumeOverlay.setSummary(mVolumeOverlay.getEntries()[index]);
+        } else if (preference == mVolumeSteps) {
+            final int value = Integer.valueOf((String) objValue);
+            final int index = mVolumeSteps.findIndexOfValue((String) objValue);
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.AUDIO_VOLUME_STEPS, value);
+            mVolumeSteps.setSummary(mVolumeSteps.getEntries()[index]);
+            PowerManager pm = (PowerManager) getActivity()
+                    .getSystemService(Context.POWER_SERVICE);
+            pm.reboot("Resetting Media Volume...");
         } else if (preference == mAnnoyingNotifications) {
             final int val = Integer.valueOf((String) objValue);
             Settings.System.putInt(getContentResolver(),
@@ -301,7 +320,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         final String toneName;
         final String toneUriPath;
 
-        if ( uri != null ) {
+        if (uri != null) {
             final Ringtone ringtone = RingtoneManager.getRingtone(getActivity(), uri);
             toneName = ringtone.getTitle(getActivity());
             toneUriPath = uri.toString();

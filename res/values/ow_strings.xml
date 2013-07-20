@@ -1668,4 +1668,8 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <!-- Show Network speed -->
     <string name="show_network_speed_title">Network Speed</string>
     <string name="show_network_speed_summary">Show Network Speed in statsbar</string>
+
+    <!-- Volume Steps -->
+    <string name="volume_steps_title">Media Volume Steps</string>
+    <string name="volume_steps_summary">Requires a System Reboot</string>
 </resources>
