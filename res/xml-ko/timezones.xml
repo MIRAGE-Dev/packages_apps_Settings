@@ -30,9 +30,9 @@
     <timezone id="Africa/Casablanca">카사블랑카</timezone>
     <timezone id="Europe/London">그리니치 표준시 (런던)</timezone>
     <timezone id="Europe/Amsterdam">중부유럽 표준시 (암스텔담)</timezone>
-    <timezone id="Europe/Belgrade">중부유럽 표준시 (Belgrade)</timezone>
+    <timezone id="Europe/Belgrade">중부유럽 표준시 (벨그라드)</timezone>
     <timezone id="Europe/Brussels">중부유럽 표준시 (브뤼셀)</timezone>
-    <timezone id="Europe/Sarajevo">중부유럽 표준시 (Sarajevo)</timezone>
+    <timezone id="Europe/Sarajevo">중부유럽 표준시 (사라예보)</timezone>
     <timezone id="Africa/Windhoek">빈트후크</timezone>
     <timezone id="Africa/Brazzaville">서아프리카 시간 (브라자빌)</timezone>
     <timezone id="Asia/Amman">동부유럽 표준시 (암만)</timezone>
@@ -56,7 +56,7 @@
     <timezone id="Asia/Karachi">카라치</timezone>
     <timezone id="Asia/Oral">오랄</timezone>
     <timezone id="Asia/Yekaterinburg">예카테린부르크</timezone>
-    <timezone id="Asia/Calcutta">인도 표준시 (Calcutta)</timezone>
+    <timezone id="Asia/Calcutta">인도 표준시 (캘커타)</timezone>
     <timezone id="Asia/Colombo">콜롬보</timezone>
     <timezone id="Asia/Katmandu">카트만두</timezone>
     <timezone id="Asia/Almaty">알마티</timezone>
