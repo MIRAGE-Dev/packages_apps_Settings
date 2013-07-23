@@ -2425,6 +2425,7 @@
         <item>25</item>
     </integer-array>
 
+
     <string-array name="entries_halo_state">
         <item>@string/halo_state_black</item>
         <item>@string/halo_state_white</item>
@@ -2522,6 +2523,7 @@
         <item>25</item>
         <item>30</item>
         <item>45</item>
+    </string-array>
 
     <!-- Wake on button -->
     <string-array name="entries_wakeon_button">
