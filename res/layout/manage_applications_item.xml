@@ -31,14 +31,9 @@
         android:id="@+id/app_icon"
         android:layout_width="@android:dimen/app_icon_size"
         android:layout_height="@android:dimen/app_icon_size"
-<<<<<<< HEAD
         android:layout_rowSpan="3"
         android:layout_marginEnd="8dip"
         android:layout_gravity="center_vertical"
-=======
-        android:layout_rowSpan="2"
-        android:layout_marginEnd="8dip"
->>>>>>> android-4.3_r2.1
         android:scaleType="centerInside"
         android:contentDescription="@null" />
 
@@ -56,17 +51,12 @@
     <CheckBox android:id="@+id/app_on_sdcard"
         android:layout_marginStart="8dip"
         android:layout_gravity="center_vertical"
-<<<<<<< HEAD
         android:layout_rowSpan="3"
-=======
-        android:layout_rowSpan="2"
->>>>>>> android-4.3_r2.1
         android:visibility="gone"
         android:clickable="false"
         android:focusable="false" />
 
     <TextView
-<<<<<<< HEAD
         android:id="@+id/app_pkgname"
         android:layout_width="0dip"
         android:layout_columnSpan="2"
@@ -81,22 +71,14 @@
     <TextView
         android:id="@+id/app_size"
         android:layout_width="0dip"
-        android:layout_gravity="fill_horizontal"
-=======
-        android:id="@+id/app_size"
-        android:layout_width="0dip"
         android:layout_gravity="fill_horizontal|top"
->>>>>>> android-4.3_r2.1
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textAlignment="viewStart" />
 
     <TextView
         android:id="@+id/app_disabled"
         android:layout_marginStart="8dip"
-<<<<<<< HEAD
-=======
         android:layout_gravity="top"
->>>>>>> android-4.3_r2.1
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
 </GridLayout>

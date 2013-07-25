@@ -1225,13 +1225,8 @@
     <string name="hardkeyboard_category" msgid="5957168411305769899">"Setelan keyboard fisik"</string>
     <string name="auto_punctuate_summary" msgid="4372126865670574837">"Tekan Spasi dua kali untuk memasukkan \".\""</string>
     <string name="show_password" msgid="3001113966880559611">"Perlihatkan sandi"</string>
-<<<<<<< HEAD
-    <string name="ime_security_warning" msgid="4135828934735934248">"Metode masukan ini mungkin dapat mengumpulkan semua teks yang Anda ketik, termasuk data pribadi seperti sandi dan nomor kartu kredit. Metode ini berasal dari apl <xliff:g id="IME_APPLICATION_NAME">%1$s</xliff:g>. Gunakan metode masukan ini?"</string>
-    <string name="spellchecker_security_warning" msgid="9060897418527708922">"Pemeriksa ejaan ini mungkin dapat mengumpulkan semua teks yang Anda ketik, termasuk data pribadi seperti sandi dan nomor kartu kredit. Pemeriksa ejaan ini berasal dari apl <xliff:g id="SPELLCHECKER_APPLICATION_NAME">%1$s</xliff:g>. Gunakan pemeriksa ejaan ini?"</string>
-=======
     <string name="ime_security_warning" msgid="4135828934735934248">"Metode masukan ini mungkin dapat mengumpulkan semua teks yang Anda ketik, termasuk data pribadi seperti sandi dan nomor kartu kredit. Metode ini berasal dari aplikasi <xliff:g id="IME_APPLICATION_NAME">%1$s</xliff:g>. Gunakan metode masukan ini?"</string>
     <string name="spellchecker_security_warning" msgid="9060897418527708922">"Pemeriksa ejaan ini mungkin dapat mengumpulkan semua teks yang Anda ketik, termasuk data pribadi seperti sandi dan nomor kartu kredit. Pemeriksa ejaan ini berasal dari aplikasi <xliff:g id="SPELLCHECKER_APPLICATION_NAME">%1$s</xliff:g>. Gunakan pemeriksa ejaan ini?"</string>
->>>>>>> android-4.3_r2.1
     <string name="spellchecker_quick_settings" msgid="246728645150092058">"Setelan"</string>
     <string name="spellchecker_language" msgid="6041050114690541437">"Bahasa"</string>
     <string name="failed_to_open_app_settings_toast" msgid="1251067459298072462">"Gagal membuka setelan untuk <xliff:g id="SPELL_APPLICATION_NAME">%1$s</xliff:g>"</string>
