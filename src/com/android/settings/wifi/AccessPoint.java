@@ -345,7 +345,6 @@ class AccessPoint extends Preference {
 
         Context context = getContext();
         StringBuilder summary = new StringBuilder();
-
         if (isIBSS)
             summary.append(context.getString(R.string.wifi_mode_ibss_short)).append(" ");
 
@@ -366,9 +365,9 @@ class AccessPoint extends Preference {
                     summary.append(context.getString(R.string.wifi_disabled_generic));
             }
         } else if (mRssi == Integer.MAX_VALUE) { // Wifi out of range
-            setSummary(context.getString(R.string.wifi_not_in_range));
+            summary.append(context.getString(R.string.wifi_not_in_range));
         } else if (mState != null) { // This is the active connection
-            setSummary(Summary.get(context, mState));
+            summary.append(Summary.get(context, mState));
         } else { // In range, not disabled.
             if (mConfig != null) { // Is saved network
                 summary.append(context.getString(R.string.wifi_remembered));
