@@ -33,7 +33,6 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
     private static final String PREF_MENU_UNLOCK = "pref_menu_display";
-    private static final String PREF_GLOW_TIMES = "glow_times";
     private static final String PREF_NAVBAR_MENU_DISPLAY = "navbar_menu_display";
     private static final String ENABLE_NAVIGATION_BAR = "enable_nav_bar";
     private static final String PREF_BUTTON = "navbar_button_settings";
@@ -48,7 +47,6 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
     ListPreference mNavBarMenuDisplay;
     CheckBoxPreference mEnableNavigationBar;
     CheckBoxPreference mNavigationBarCanMove;
-    ListPreference mGlowTimes;
     PreferenceScreen mButtonPreference;
     PreferenceScreen mRingPreference;
     PreferenceScreen mStyleDimenPreference;
@@ -110,7 +108,6 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
                     Settings.System.UI_FORCE_OVERFLOW_BUTTON,
                     show ? 0 : 1);
         }
-        mGlowTimes.setEnabled(show);
         mNavBarMenuDisplay.setEnabled(show);
         menuDisplayLocation.setEnabled(show);
         mButtonPreference.setEnabled(show);
@@ -147,19 +144,6 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
         } else if (preference == mNavBarMenuDisplay) {
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.MENU_VISIBILITY, Integer.parseInt((String) newValue));
-            return true;
-        } else if (preference == mGlowTimes) {
-            // format is (on|off) both in MS
-            String value = (String) newValue;
-            String[] breakIndex = value.split("\\|");
-            int onTime = Integer.valueOf(breakIndex[0]);
-            int offTime = Integer.valueOf(breakIndex[1]);
-
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.NAVIGATION_BAR_GLOW_DURATION[0], offTime);
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.NAVIGATION_BAR_GLOW_DURATION[1], onTime);
-            updateGlowTimesSummary();
             return true;
         }
         return false;

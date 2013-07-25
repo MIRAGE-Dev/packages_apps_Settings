@@ -1533,7 +1533,6 @@
     <!-- Do not translate.  Concise terminology for wifi with 802.1x EAP security -->
     <string name="wifi_security_eap">802.1x EAP</string>
 
-<<<<<<< HEAD
     <string name="wifi_mode">Mode</string>
     <string name="wifi_mode_ibss">Ad-Hoc (IBSS) Network</string>
     <string name="wifi_mode_ibss_short">Ad-Hoc</string>
@@ -1541,11 +1540,10 @@
     <string name="wifi_ibss_freq_title">Channel / Frequency</string>
     <string name="wifi_channel">Channel</string>
     <string name="wifi_mhz">MHz</string>
-=======
+
     <string name="wifi_scan_always_turnon_message">To improve location accuracy and for other purposes, <xliff:g id="app_name">%1$s</xliff:g> wants to turn on network scanning, even when Wi-Fi is off.\n\nAllow this for all apps that want to scan?</string>
     <string name="wifi_scan_always_confirm_allow">Allow</string>
     <string name="wifi_scan_always_confirm_deny">Deny</string>
->>>>>>> android-4.3_r2.1
 
     <!-- Button label to connect to a Wi-Fi network -->
     <string name="wifi_connect">Connect</string>
@@ -1778,15 +1776,12 @@
     <string name="vibrate_in_silent_title">Vibrate when silent</string>
     <!-- Sound settings screen, setting option name -->
     <string name="notification_sound_title">Default notification sound</string>
-<<<<<<< HEAD
     <!-- Notification Behavior Preferences -->
     <string name="notification_behaviour_title">Notification behavior</string>
     <!-- Always show notification drawer settings button -->
     <string name="notification_settings_btn_title">Always show settings button</string>
-=======
     <!-- Sound settings screen, notification light repeat pulsing title -->
     <string name="notification_pulse_title">Pulse notification light</string>
->>>>>>> android-4.3_r2.1
     <!-- Sound settings screen, the title of the volume bar to adjust the incoming call volume -->
     <string name="incoming_call_volume_title">Ringtone</string>
     <!-- Sound settings screen, the title of the volume bar to adjust the notification volume -->
@@ -2593,7 +2588,6 @@
     <!-- Displayed when user launches a widget configuration activity that was uninstalled -->
     <string name="activity_not_found">Application is not installed on your phone.</string>
 
-<<<<<<< HEAD
     <!-- Lock Gesture settings -->
     <!-- Security & location settings screen, setting option name -->
     <string name="lockgesture_change_lock_pattern_label">Change unlock gesture</string>
@@ -2647,8 +2641,6 @@
     <!-- Security & location settings screen, change unlock gesture screen countdown hint on bottom of screen after too many incorrect attempts -->
     <string name="lockgesture_too_many_failed_confirmation_attempts_footer">Try again in <xliff:g id="number">%d</xliff:g> seconds.</string>
 
-=======
->>>>>>> android-4.3_r2.1
     <!-- Applications Settings --> <skip />
     <!-- Applications settings screen, setting option name for the user to go to the screen to manage installed applications  -->
     <string name="manageapplications_settings_title">Manage apps</string>
@@ -2912,8 +2904,6 @@
     <string name="app_disable_notifications_dlg_text">
         If you turn off notifications for this app, you may miss important alerts and updates.
     </string>
-<<<<<<< HEAD
-=======
 
     <!-- App Ops Settings --> <skip />
     <!-- [CHAR LIMIT=NONE] App ops settings title, on main settings screen. If clicked, the user is taken to a settings screen for app operations -->
@@ -2923,7 +2913,6 @@
     <!-- [CHAR LIMIT=NONE] Time label for an operation that has never executed. -->
     <string name="app_ops_never_used">(Never used)</string>
 
->>>>>>> android-4.3_r2.1
     <!-- [CHAR LIMIT=25] Services settings screen, setting option name for the user to go to the screen to view app storage use -->
     <string name="storageuse_settings_title">Storage use</string>
     <!-- Services settings screen, setting option summary for the user to go to the screen to app storage use -->
@@ -3205,21 +3194,12 @@
     <string name="development_settings_title">Developer options</string>
     <!-- Development Settings summary.  The summary of the item to take the user to Development settings.  Development settings are settings meant for application developers. -->
     <string name="development_settings_summary">Set options for app development</string>
-<<<<<<< HEAD
     <!-- Setting checkbox title for Whether to enable Android debugging support on the phone. -->
-    <string name="enable_adb">Android debugging</string>
-    <!-- Setting checkbox summary for Whether to enable Android debugging support on the phone -->
-    <string name="enable_adb_summary">Allow Android debug mode, the adb interface on USB (or on network)</string>
-=======
-    <!-- Setting checkbox title for Whether to enable USB debugging support on the phone. -->
-    <!-- Error message for users that aren't allowed to modify developer options [CHAR LIMIT=none] -->
-    <string name="development_settings_not_available">Developer options are not available for this user</string>
     <string name="enable_adb">USB debugging</string>
     <!-- Setting checkbox summary for Whether to enable USB debugging support on the phone -->
     <string name="enable_adb_summary">Debug mode when USB is connected</string>
     <!-- Setting title to revoke secure USB debugging authorizations -->
     <string name="clear_adb_keys">Revoke USB debugging authorizations</string>
->>>>>>> android-4.3_r2.1
     <!-- [CHAR LIMIT=NONE] Setting checkbox title for Whether to include bug report item in power menu. -->
     <string name="bugreport_in_power">Power menu bug reports</string>
     <!-- [CHAR LIMIT=NONE] Setting checkbox summary for Whether to include bug report item in power -->

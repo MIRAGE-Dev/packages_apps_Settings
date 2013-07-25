@@ -62,6 +62,8 @@ public class StatusBarClockStyle extends SettingsPreferenceFragment
     public static final int CLOCK_DATE_STYLE_UPPERCASE = 2;
     private static final int CUSTOM_CLOCK_DATE_FORMAT_INDEX = 18;
 
+    private static final int MENU_RESET = Menu.FIRST;
+
     private ListPreference mClockStyle;
     private ListPreference mClockAmPmStyle;
     private ColorPickerPreference mColorPicker;
@@ -142,6 +144,7 @@ public class StatusBarClockStyle extends SettingsPreferenceFragment
         mStatusBarClock = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_CLOCK);
         mStatusBarClock.setChecked((Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
                 Settings.System.STATUS_BAR_CLOCK, 1) == 1));
+        mStatusBarClock.setOnPreferenceChangeListener(this);
 
         mStatusBarSecond = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_USE_SECOND);
         mStatusBarSecond.setChecked((Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
@@ -218,6 +221,11 @@ public class StatusBarClockStyle extends SettingsPreferenceFragment
             mClockDateStyle.setSummary(mClockDateStyle.getEntries()[index]);
             parseClockDateFormats();
             return true;
+        } else if (preference == mStatusBarClock) {
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
+                    Settings.System.STATUS_BAR_CLOCK,
+                    (Boolean) newValue ? 1 : 0);
+            return true;
         } else if (preference == mClockDateFormat) {
             int index = mClockDateFormat.findIndexOfValue((String) newValue);
 
@@ -262,6 +270,7 @@ public class StatusBarClockStyle extends SettingsPreferenceFragment
         return false;
     }
 
+<<<<<<< HEAD
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         if (preference == mStatusBarClock) {
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
@@ -277,23 +286,39 @@ public class StatusBarClockStyle extends SettingsPreferenceFragment
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 
+=======
+>>>>>>> 9f1dad4... Settings: complete overhaul/optimizing + drag drop sort + easy dev life
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        super.onCreateOptionsMenu(menu, inflater);
-        inflater.inflate(R.menu.status_bar_clock_style, menu);
+        menu.add(0, MENU_RESET, 0, R.string.navbar_reset)
+                .setIcon(R.drawable.ic_settings_backup) // use the backup icon
+                .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.reset:
-                Settings.System.putInt(getActivity().getContentResolver(),
-                        Settings.System.STATUSBAR_CLOCK_COLOR, -2);
-                createCustomView();
+            case MENU_RESET:
+                resetToDefault();
                 return true;
              default:
                 return super.onContextItemSelected(item);
         }
+    }
+
+    private void resetToDefault() {
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
+        alertDialog.setTitle(R.string.status_bar_reset);
+        alertDialog.setMessage(R.string.status_bar_clock_style_reset_message);
+        alertDialog.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                Settings.System.putInt(getActivity().getContentResolver(),
+                        Settings.System.STATUSBAR_CLOCK_COLOR, -2);
+                createCustomView();
+            }
+        });
+        alertDialog.setNegativeButton(R.string.cancel, null);
+        alertDialog.create().show();
     }
 
     private void parseClockDateFormats() {

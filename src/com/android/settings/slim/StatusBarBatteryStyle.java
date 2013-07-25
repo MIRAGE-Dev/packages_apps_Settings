@@ -16,6 +16,8 @@
 
 package com.android.settings.slim;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
@@ -50,6 +52,8 @@ public class StatusBarBatteryStyle extends SettingsPreferenceFragment implements
     private static final String PREF_BATT_BAR_COLOR = "battery_bar_color";
     private static final String PREF_BATT_BAR_WIDTH = "battery_bar_thickness";
     private static final String PREF_BATT_ANIMATE = "battery_bar_animate";
+
+    private static final int MENU_RESET = Menu.FIRST;
 
     private ListPreference mStatusBarBattery;
     private ColorPickerPreference mCircleColor;
@@ -177,6 +181,7 @@ public class StatusBarBatteryStyle extends SettingsPreferenceFragment implements
         mBatteryBarChargingAnimation.setChecked(Settings.System.getInt(
                 getActivity().getContentResolver(),
                 Settings.System.STATUSBAR_BATTERY_BAR_ANIMATE, 0) == 1);
+        mBatteryBarChargingAnimation.setOnPreferenceChangeListener(this);
 
         mBatteryBarThickness = (ListPreference) findPreference(PREF_BATT_BAR_WIDTH);
         mBatteryBarThickness.setOnPreferenceChangeListener(this);
@@ -196,22 +201,35 @@ public class StatusBarBatteryStyle extends SettingsPreferenceFragment implements
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        super.onCreateOptionsMenu(menu, inflater);
-        inflater.inflate(R.menu.status_bar_battery_style, menu);
+        menu.add(0, MENU_RESET, 0, R.string.navbar_reset)
+                .setIcon(R.drawable.ic_settings_backup) // use the backup icon
+                .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.reset_icon:
-                iconColorReset();
-                return true;
-            case R.id.reset_bar:
-                barColorReset();
+            case MENU_RESET:
+                resetToDefault();
                 return true;
              default:
                 return super.onContextItemSelected(item);
         }
+    }
+
+    private void resetToDefault() {
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
+        alertDialog.setTitle(R.string.status_bar_reset);
+        alertDialog.setMessage(R.string.status_bar_battery_style_reset_message);
+        alertDialog.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                iconColorReset();
+                barColorReset();
+                createCustomView();
+            }
+        });
+        alertDialog.setNegativeButton(R.string.cancel, null);
+        alertDialog.create().show();
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
@@ -280,6 +298,11 @@ public class StatusBarBatteryStyle extends SettingsPreferenceFragment implements
                     Settings.System.STATUSBAR_BATTERY_BAR_STYLE, val);
             mBatteryBarStyle.setSummary(mBatteryBarStyle.getEntries()[index]);
             return true;
+        } else if (preference == mBatteryBarChargingAnimation) {
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.STATUSBAR_BATTERY_BAR_ANIMATE,
+                    (Boolean) newValue ? 1 : 0);
+            return true;
         } else if (preference == mBatteryBarThickness) {
             int val = Integer.parseInt((String) newValue);
             int index = mBatteryBarThickness.findIndexOfValue((String) newValue);
@@ -291,16 +314,6 @@ public class StatusBarBatteryStyle extends SettingsPreferenceFragment implements
         return false;
     }
 
-    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-        if (preference == mBatteryBarChargingAnimation) {
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.STATUSBAR_BATTERY_BAR_ANIMATE,
-                    ((CheckBoxPreference) preference).isChecked() ? 1 : 0);
-            return true;
-        }
-        return super.onPreferenceTreeClick(preferenceScreen, preference);
-    }
-
     private void iconColorReset() {
         Settings.System.putInt(getActivity().getContentResolver(),
                 Settings.System.STATUS_BAR_CIRCLE_BATTERY_COLOR, -2);
@@ -308,13 +321,11 @@ public class StatusBarBatteryStyle extends SettingsPreferenceFragment implements
                 Settings.System.STATUS_BAR_BATTERY_TEXT_COLOR, -2);
         Settings.System.putInt(getActivity().getContentResolver(),
                 Settings.System.STATUS_BAR_BATTERY_TEXT_CHARGING_COLOR, -2);
-        createCustomView();
     }
 
     private void barColorReset() {
         Settings.System.putInt(getActivity().getContentResolver(),
                 Settings.System.STATUSBAR_BATTERY_BAR_COLOR, -2);
-        createCustomView();
     }
 
     private void updateBatteryBarOptions(int batteryBarStat) {
