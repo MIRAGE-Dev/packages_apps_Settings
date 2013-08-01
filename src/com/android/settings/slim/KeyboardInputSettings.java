@@ -17,6 +17,9 @@
 package com.android.settings.slim;
 
 import android.app.AlertDialog;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.PackageManager.NameNotFoundException;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
@@ -26,6 +29,7 @@ import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
+import android.util.Log;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -33,6 +37,8 @@ import com.android.settings.Utils;
 
 public class KeyboardInputSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
+
+    private static final String TAG = "KeyboardInputSettings";
 
     private static final String PREF_DISABLE_FULLSCREEN_KEYBOARD = "disable_fullscreen_keyboard";
     private static final String KEY_IME_SWITCHER = "status_bar_ime_switcher";
@@ -96,6 +102,37 @@ public class KeyboardInputSettings extends SettingsPreferenceFragment implements
         mShowEnterKey.setOnPreferenceChangeListener(this);
     }
 
+    private void checkFeatureCompatibility() {
+        boolean enabled = false;
+        String[] currentDefaultImePackage = null;
+        try {
+            PackageManager pm = getPackageManager();
+            String defaultImePackage = Settings.Secure.getString(
+                getContentResolver(), Settings.Secure.DEFAULT_INPUT_METHOD);
+            if (defaultImePackage != null) {
+                currentDefaultImePackage = defaultImePackage.split("/", 2);
+            }
+            PackageInfo packageInfo = pm.getPackageInfo(currentDefaultImePackage[0], PackageManager.GET_PERMISSIONS);
+            String[] requestedPermissions = packageInfo.requestedPermissions;
+            if(requestedPermissions != null) {
+                for (int i = 0; i < requestedPermissions.length; i++) {
+                    if (requestedPermissions[i].equals(android.Manifest.permission.WRITE_SETTINGS)) {
+                        enabled = true;
+                    }
+                }
+            }
+        } catch (NameNotFoundException e) {
+        }
+        if (mKeyboardRotationToggle != null && mKeyboardRotationTimeout != null) {
+            mKeyboardRotationToggle.setEnabled(enabled);
+            mKeyboardRotationTimeout.setEnabled(enabled);
+            if (!enabled) {
+                mKeyboardRotationToggle.setSummary(getString(R.string.ime_does_not_support_feature));
+                mKeyboardRotationTimeout.setSummary(getString(R.string.ime_does_not_support_feature));
+            }
+        }
+    }
+
     public void updateRotationTimeout(int timeout) {
         if (timeout == 0)
             timeout = KEYBOARD_ROTATION_TIMEOUT_DEFAULT;
@@ -112,6 +149,7 @@ public class KeyboardInputSettings extends SettingsPreferenceFragment implements
                     Settings.System.STATUS_BAR_IME_SWITCHER, 1) != 0);
         }
 
+        checkFeatureCompatibility();
     }
 
     @Override
